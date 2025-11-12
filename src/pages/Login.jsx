@@ -1,7 +1,7 @@
 const Login = () => {
   return (
     <div className="flex justify-center items-center h-screen bg-[#FFF6E5]">
-      <div className="flex w-full max-w-md flex-col justify-center px-6 py-12 lg:px-8 bg-gradient-to-b from-[#FFD89C] to-[#FAB85F] border border-[#FFD89C] rounded-2xl shadow-xl">
+      <div className="flex w-full max-w-md flex-col justify-center px-6 py-12 lg:px-8 bg-linear-to-b from-[#FFD89C] to-[#FAB85F] border border-[#FFD89C] rounded-2xl shadow-xl">
         {/* Logo & Heading */}
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img
@@ -73,7 +73,7 @@ const Login = () => {
             <div>
               <button
                 type="submit"
-                className="flex w-full justify-center rounded-md bg-gradient-to-r from-[#fd8e36] to-[#fbbf77] px-4 py-2 text-sm font-semibold text-white shadow-md hover:shadow-lg hover:from-[#fbbf77] hover:to-[#fd8e36] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#fd8e36]"
+                className="flex w-full justify-center rounded-md bg-linear-to-r from-[#fd8e36] to-[#fbbf77] px-4 py-2 text-sm font-semibold text-white shadow-md hover:shadow-lg hover:from-[#fbbf77] hover:to-[#fd8e36] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#fd8e36]"
               >
                 Sign in
               </button>
@@ -95,6 +95,5 @@ const Login = () => {
     </div>
   );
 };
-
 
 export default Login;
