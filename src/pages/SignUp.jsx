@@ -1,4 +1,4 @@
-const Register = () => {
+const SignUp = () => {
   return (
     <div className="flex justify-center items-center min-h-screen bg-[#FFF6E5]">
       <div
@@ -150,6 +150,6 @@ const Register = () => {
 
 // export default Register;
 
-export default Register;
+export default SignUp;
 
 

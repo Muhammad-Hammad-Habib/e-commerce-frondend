@@ -1,4 +1,4 @@
-const Login = () => {
+const SignIn = () => {
   return (
     <div className="flex justify-center items-center h-screen bg-[#FFF6E5]">
       <div className="flex w-full max-w-md flex-col justify-center px-6 py-12 lg:px-8 bg-linear-to-b from-[#FFD89C] to-[#FAB85F] border border-[#FFD89C] rounded-2xl shadow-xl">
@@ -96,4 +96,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignIn;
