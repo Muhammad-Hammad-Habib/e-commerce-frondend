@@ -1,9 +1,9 @@
 import React from "react";
-import heroSectionBlow from "../asset/heroSectionBlow.png";
+import heroSectionBlow from "../asset/heroSectionBowl.png";
 
 const HeroSection = () => {
   return (
-    <div className="bg-[#FCEFD9] min-h-[80vh] flex items-center px-8 md:px-20">
+    <div className="bg-[#f7e1bc] min-h-[90vh] flex items-center px-8  md:px-20">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center w-full">
         {/* LEFT TEXT AREA */}
         <div>
