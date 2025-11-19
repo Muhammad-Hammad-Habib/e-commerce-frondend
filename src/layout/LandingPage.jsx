@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "../component/Navbar";
 import HeroSection from "../component/HeroSection";
 import FeaturedProducts from "../component/FeaturedProducts";
+import WhyChooseUs from "../component/WhyChooseUs";
+import BrowseCategories from "../component/BrowseCategories";
 
 const LandingPage = () => {
   return (
@@ -9,6 +11,8 @@ const LandingPage = () => {
       <Navbar />
       <HeroSection />
       <FeaturedProducts/>
+      <WhyChooseUs/>
+      <BrowseCategories/>
     </div>
   );
 };
