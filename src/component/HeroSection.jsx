@@ -3,11 +3,11 @@ import heroSectionBlow from "../asset/heroSectionBowl.png";
 
 const HeroSection = () => {
   return (
-    <div className="bg-[#f7e1bc] min-h-[90vh] flex items-center px-8  md:px-20">
+    <div className="second-main-bg min-h-[90vh] flex items-center px-8  md:px-20">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center w-full">
         {/* LEFT TEXT AREA */}
         <div>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-[#4B2E14] leading-tight">
+          <h1 className="text-4xl md:text-5xl font-extrabold main-text-color leading-tight">
             Lorem ipsum dolor sit, amet
           </h1>
 
@@ -18,16 +18,12 @@ const HeroSection = () => {
             reiciendis deleniti esse.
           </p>
 
-          <button
-            className="mt-6 px-6 py-3 bg-linear-to-r from-[#fd8e36] to-[#fbbf77]  hover:from-[#fbbf77] hover:to-[#fd8e36] 
-                         text-white font-semibold rounded-lg shadow 
-                         transition-all duration-300
-                         shadow-md hover:shadow-lg focus:outline-none focus:ring-2 
-                         focus:ring-offset-2 focus:ring-[#fd8e36]
-                         "
-          >
-            Shop Now
-          </button>
+          {/* bg-linear-to-r from-[#fd8e36] to-[#fbbf77]  hover:from-[#fbbf77] hover:to-[#fd8e36]  */}
+          {/* transition-all duration-300
+          shadow-md hover:shadow-lg focus:outline-none focus:ring-2 
+          focus:ring-offset-2 focus:ring-[#fd8e36]
+          text-white font-semibold rounded-lg shadow  */}
+          <button className="mt-6 px-6 py-3  custom-button">Shop Now</button>
         </div>
 
         {/* RIGHT IMAGE AREA */}
