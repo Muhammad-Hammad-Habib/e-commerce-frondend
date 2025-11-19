@@ -1,1 +1,29 @@
+.card-bg{
+    background-color: white !important;
+}
+.main-text-color{
+    color: #4B2E14 !important;
+}
+.second-main-bg{
+    background-color: #f7e1bc !important;
+}
+.custom-button{
+  background: linear-gradient(to right, #fd8e36, #fbbf77) !important;
+  color: white !important;
+  font-weight: 600 !important;
+  border-radius: 0.5rem !important; /* rounded-lg */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1) !important; /* shadow-md */
+  /* transition: all 0.3s; */
+}
 
+.custom-button:hover {
+  background: linear-gradient(to right, #fbbf77, #fd8e36) !important;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15) !important; /* shadow-lg */
+}
+
+.custom-button:active {
+  outline: none !important;
+  box-shadow:
+    0 0 0 2px #fd8e36,        /*focus:ring*/
+    0 0 0 4px white !important;          /*focus:ring-offset*/
+}
