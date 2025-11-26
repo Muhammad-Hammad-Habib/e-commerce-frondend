@@ -16,13 +16,14 @@ import {
   ShoppingCartIcon,
 } from "@heroicons/react/24/solid";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ toggleCart }) => {
   const [navigation, setNavigation] = useState([
-    { name: "Home", href: "#", current: true },
-    { name: "Shop", href: "#", current: false },
+    { name: "Home", href: "/", current: true },
+    { name: "Products", href: "/products", current: false },
     { name: "About", href: "#", current: false },
-    { name: "Contact", href: "signup", current: false },
+    { name: "Contact", href: "#contect", current: false },
   ]);
 
   const classNames = (...classes) => {
@@ -40,7 +41,7 @@ const Navbar = () => {
       as="nav"
       className="relative after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10"
     >
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-4">
+      <div className="mx-auto max-w px-2 sm:px-6 lg:px-4">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
@@ -64,9 +65,9 @@ const Navbar = () => {
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
                 {navigation.map((item, key) => (
-                  <a
+                  <NavLink
                     key={item.name}
-                    href={item.href}
+                    to={item.href}
                     onClick={() => handleOnClickActive(key)}
                     aria-current={item.current ? "page" : undefined}
                     className={classNames(
@@ -77,28 +78,21 @@ const Navbar = () => {
                     )}
                   >
                     {item.name}
-                  </a>
+                  </NavLink>
                 ))}
               </div>
             </div>
           </div>
-          <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            {/* <button
-              type="button"
-              className="relative rounded-full p-1 text-gray-400 hover:text-white focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500"
-            >
-              <span className="absolute -inset-1.5" />
-              <span className="sr-only">View notifications</span>
-              <BellIcon aria-hidden="true" className="size-6" />
-            </button> */}
-
+          <div className="absolute inset-y-0 right-0 flex items-center pr-1 sm:static sm:inset-auto sm:ml-4 sm:pr-0">
             <button
               type="button"
-              className="relative rounded-full p-1 text-[#D9822B] hover:text-[#FF9F1C] focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500"
+              className="relative rounded-full p-1 custom-button "
             >
-              {/* <span className="absolute -inset-1.5" /> */}
-              {/* <span className="sr-only">View notifications</span> */}
-              <ShoppingCartIcon aria-hidden="true" className="size-6" />
+              <ShoppingCartIcon
+                aria-hidden="true"
+                className="size-7"
+                onClick={toggleCart}
+              />
             </button>
 
             {/* Profile dropdown */}

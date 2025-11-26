@@ -1,21 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../component/Navbar";
-import HeroSection from "../component/HeroSection";
-import FeaturedProducts from "../component/FeaturedProducts";
-import WhyChooseUs from "../component/WhyChooseUs";
-import BrowseCategories from "../component/BrowseCategories";
-import AboutUs from "../component/AboutUs";
 import Footer from "../component/Footer";
+import CartSideBar from "../component/CartSideBar";
+import { Outlet } from "react-router-dom";
+
+{
+  /* <CartSidebar isOpen={isCartOpen} toggleCart={toggleCart} /> */
+}
 
 const LandingPage = () => {
+  const [isCartOpen, setIsCartOpen] = useState(false);
+  const toggleCart = () => setIsCartOpen(!isCartOpen);
   return (
     <div className="container-lg bg-[#FFF6E5] ">
-      <Navbar />
-      <HeroSection />
-      <FeaturedProducts />
-      <WhyChooseUs />
-      <BrowseCategories />
-      <AboutUs />
+      <Navbar toggleCart={toggleCart} />
+      <Outlet />
+      <CartSideBar isOpen={isCartOpen} toggleCart={toggleCart} />
       <Footer />
     </div>
   );
