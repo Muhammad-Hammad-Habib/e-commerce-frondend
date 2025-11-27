@@ -6,7 +6,7 @@ const BrowseCategories = () => {
     <section className="py-16">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Heading */}
-        <h2 className="text-3xl font-extrabold text-center text-[#5A2E0F] mb-2">
+        <h2 className="text-3xl font-extrabold text-center main-text-color mb-2">
           Browse Categories
         </h2>
         <p className="text-center text-[#7A4A21] mb-12">
@@ -22,33 +22,31 @@ const BrowseCategories = () => {
               alt="Pipe Papad"
               className="w-32 h-32 mx-auto mb-4"
             />
-            <h3 className="text-xl font-semibold text-[#5A2E0F]">Pipe</h3>
+            <h3 className="text-xl font-semibold main-text-color">Pi</h3>
             <button className="mt-4 px-5 py-2 custom-button font-medium">
               View Products
             </button>
           </div>
 
-          {/* Category Card */}
-          <div className="card-bg rounded-xl shadow-md hover:shadow-lg duration-300 p-6 text-center">
+          <div className="bg-white rounded-xl shadow-md hover:shadow-lg duration-300 p-6 text-center">
             <img
               src={demo}
-              alt="Ring Papad"
+              alt="Pipe Papad"
               className="w-32 h-32 mx-auto mb-4"
             />
-            <h3 className="text-xl font-semibold text-[#5A2E0F]">Ring</h3>
+            <h3 className="text-xl font-semibold main-text-color">Pi</h3>
             <button className="mt-4 px-5 py-2 custom-button font-medium">
               View Products
             </button>
           </div>
 
-          {/* Category Card */}
-          <div className="card-bg rounded-xl shadow-md hover:shadow-lg duration-300 p-6 text-center">
+          <div className="bg-white rounded-xl shadow-md hover:shadow-lg duration-300 p-6 text-center">
             <img
               src={demo}
-              alt="Slanty Papad"
+              alt="Pipe Papad"
               className="w-32 h-32 mx-auto mb-4"
             />
-            <h3 className="text-xl font-semibold text-[#5A2E0F]">Slanty</h3>
+            <h3 className="text-xl font-semibold main-text-color">Pi</h3>
             <button className="mt-4 px-5 py-2 custom-button font-medium">
               View Products
             </button>
