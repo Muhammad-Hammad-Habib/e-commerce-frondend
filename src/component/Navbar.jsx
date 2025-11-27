@@ -39,7 +39,7 @@ const Navbar = ({ toggleCart }) => {
   return (
     <Disclosure
       as="nav"
-      className="relative after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10"
+      className="sticky border-b-1 border-[#f79854] bg-[#FFF6E5] z-1 top-0 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10"
     >
       <div className="mx-auto max-w px-2 sm:px-6 lg:px-4">
         <div className="relative flex h-16 items-center justify-between">
@@ -72,8 +72,8 @@ const Navbar = ({ toggleCart }) => {
                     aria-current={item.current ? "page" : undefined}
                     className={classNames(
                       item.current
-                        ? "bg-gradient-to-r from-[#fd8e36] to-[#fbbf77] text-white"
-                        : "text-[#ce6c45] hover:bg-white/5 hover:text-[#f4713d]",
+                        ? "custom-button"
+                        : "text-[#ff6900] hover:bg-white/5 hover:text-[#d75a00]",
                       "rounded-md px-3 py-2 text-sm font-medium"
                     )}
                   >

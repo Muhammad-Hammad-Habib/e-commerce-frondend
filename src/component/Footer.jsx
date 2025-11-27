@@ -7,7 +7,7 @@ const Footer = () => {
         {/* Brand */}
         <div>
           <h2 className="text-2xl font-extrabold main-text-color">
-            KachaPapad.pk
+            Kad.pk
           </h2>
           <p className="text-[#6f4e20] mt-3 text-sm leading-relaxed">
             Freshly crafted kacha papads prepared with authentic traditional
@@ -15,24 +15,26 @@ const Footer = () => {
           </p>
 
           {/* Social Icons */}
-          <div className="flex gap-4 mt-4">
+          <div className="flex gap-2 mt-4">
             <a
               href="#"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-[#FAB85F] text-white hover:bg-[#FD8E36] transition shadow-md"
-            >
+              className="w-10 h-10 flex items-center justify-center rounded-full custom-button transition shadow-md"
+              >
               <FaFacebookF size={18} />
             </a>
 
             <a
               href="#"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-[#FAB85F] text-white hover:bg-[#FD8E36] transition shadow-md"
-            >
+              className="w-10 h-10 flex items-center justify-center rounded-full custom-button transition shadow-md"
+              // className="w-10 h-10 flex items-center justify-center rounded-full bg-[#FAB85F] text-white hover:bg-[#FD8E36] transition shadow-md"
+              >
               <FaInstagram size={18} />
             </a>
 
             <a
               href="#"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-[#FAB85F] text-white hover:bg-[#FD8E36] transition shadow-md"
+              className="w-10 h-10 flex items-center justify-center rounded-full custom-button transition shadow-md"
+              // className="w-10 h-10 flex items-center justify-center rounded-full bg-[#FAB85F] text-white hover:bg-[#FD8E36] transition shadow-md"
             >
               <FaTwitter size={18} />
             </a>
@@ -72,7 +74,7 @@ const Footer = () => {
             Contact Us
           </h3>
           <ul className="space-y-2 text-[#6f4e20] text-sm">
-            <li>Email: support@kachapapad.pk</li>
+            <li>Email: s.pk</li>
             <li>Phone: +92 300 1234567</li>
             <li>Location: Karachi, Pakistan</li>
           </ul>

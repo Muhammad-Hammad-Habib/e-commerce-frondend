@@ -8,7 +8,7 @@
     background-color: #f7e1bc !important;
 }
 .custom-button{
-  background: linear-gradient(to right, #fd8e36, #fbbf77) !important;
+  background: linear-gradient(to right, #ff6900, #ff8904) !important;
   color: white !important;
   font-weight: 600 !important;
   border-radius: 0.5rem !important; /* rounded-lg */
@@ -17,7 +17,7 @@
 }
 
 .custom-button:hover {
-  background: linear-gradient(to right, #fbbf77, #fd8e36) !important;
+  background: linear-gradient(to right, #ff8904, #ff6900) !important;
   box-shadow: 0 6px 10px rgba(0,0,0,0.15) !important; /* shadow-lg */
 }
 

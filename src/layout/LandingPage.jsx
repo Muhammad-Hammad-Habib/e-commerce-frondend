@@ -4,10 +4,6 @@ import Footer from "../component/Footer";
 import CartSideBar from "../component/CartSideBar";
 import { Outlet } from "react-router-dom";
 
-{
-  /* <CartSidebar isOpen={isCartOpen} toggleCart={toggleCart} /> */
-}
-
 const LandingPage = () => {
   const [isCartOpen, setIsCartOpen] = useState(false);
   const toggleCart = () => setIsCartOpen(!isCartOpen);
