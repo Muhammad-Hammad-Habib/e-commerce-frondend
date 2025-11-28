@@ -54,7 +54,7 @@ const CartSideBar = ({ isOpen, toggleCart }) => {
       </div>
 
       {/* TOTAL */}
-      <div className="p-2 border-t border-orange-200">
+      <div className=" fixed bottom-0 w-full p-2 border-t border-orange-200">
         <div className="flex justify-between text-[#75451C] text-lg">
           <span>Subtotal:</span>
           <span>Rs. 820</span>
@@ -89,3 +89,6 @@ const CartSideBar = ({ isOpen, toggleCart }) => {
 };
 
 export default CartSideBar;
+    // position: fixed;
+    // width: 100%;
+    // bottom: 0px
