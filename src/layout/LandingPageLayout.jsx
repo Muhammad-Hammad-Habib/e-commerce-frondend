@@ -12,7 +12,7 @@ const LandingPage = () => {
       <Navbar toggleCart={toggleCart} />
       <Outlet />
       <CartSideBar isOpen={isCartOpen} toggleCart={toggleCart} />
-      <Footer />
+
     </div>
   );
 };
