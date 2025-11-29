@@ -20,9 +20,9 @@ const CartSideBar = ({ isOpen, toggleCart }) => {
       {/* ITEMS */}
       <div className="p-2 space-y-4 overflow-y-auto h-[65%]">
         {/* Item Card */}
-        {[1, 2, 3, 4, 5, 6].map(() => {
+        {[1, 2, 3, 4, 5, 6].map((value) => {
           return (
-            <div className="flex items-center bg-white p-1 rounded-xl shadow-sm border border-orange-100">
+            <div key={value} className="flex items-center bg-white p-1 rounded-xl shadow-sm border border-orange-100">
               <img
                 src={demo}
                 className="w-auto h-14 object-contain rounded-lg"
@@ -55,19 +55,19 @@ const CartSideBar = ({ isOpen, toggleCart }) => {
 
       {/* TOTAL */}
       <div className=" fixed bottom-0 w-full p-2 border-t border-orange-200">
-        <div className="flex justify-between text-[#75451C] text-lg">
+        <div className="flex justify-between text-[#75451C] text-md">
           <span>Subtotal:</span>
           <span>Rs. 820</span>
         </div>
 
-        <div className="flex justify-between text-[#75451C] text-lg">
+        <div className="flex justify-between text-[#75451C] text-md">
           <span>Delivery:</span>
           <span>Rs. 150</span>
         </div>
 
         <hr className=" border-orange-300" />
 
-        <div className="flex justify-between font-bold text-xl text-[#75451C] mb-2">
+        <div className="flex justify-between font-bold text-md text-[#75451C] mb-2">
           <span>Total:</span>
           <span>Rs. 970</span>
         </div>
