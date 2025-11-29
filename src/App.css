@@ -27,3 +27,25 @@
     0 0 0 2px #fd8e36,        /*focus:ring*/
     0 0 0 4px white !important;          /*focus:ring-offset*/
 }
+
+.input-field {
+  margin-top: 2px;
+  background-color: #FFF6E5;
+  border: 1px solid #FFC67D;
+  border-radius: 0.375rem; /* rounded-md */
+  padding: 0.5rem 0.75rem; /* py-2 px-3 */
+  color: #5B3A29;
+  outline: none;
+}
+
+/* Placeholder color */
+.input-field::placeholder {
+  color: #6b7280; /* gray-500 */
+}
+
+/* Focus state */
+.input-field:focus {
+  border-color: #fd8e36;
+  box-shadow: 0 0 0 2px rgba(253, 142, 54, 0.4); /* ring-2 ring-[#fd8e36]/40 */
+  outline: none;
+}
