@@ -4,7 +4,7 @@ const Checkout = () => {
   const [paymentMethod, setPaymentMethod] = useState("cod");
 
   return (
-    <div className="min-h-screen bg-[#FFF6E5] px-6 py-10 flex justify-center">
+    <div className="h-[calc(100vh-65px)] bg-[#FFF6E5] px-6 py-10 flex justify-center">
       <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* LEFT SIDE — FORM */}
         <div>
@@ -56,13 +56,16 @@ const Checkout = () => {
 
             <label className="flex items-center gap-3 cursor-pointer">
               <input
+                disabled
                 type="radio"
                 name="payment"
                 checked={paymentMethod === "bank"}
                 onChange={() => setPaymentMethod("bank")}
                 className="w-4 h-4 text-orange-500"
               />
-              <span className="text-[#4A2E0F]">Bank Transfer</span>
+              <span className="text-[#4A2E0F]">
+                Bank Transfer - Disabled for now
+              </span>
             </label>
           </div>
         </div>

@@ -4,6 +4,7 @@ import FeaturedProducts from "../component/FeaturedProducts";
 import WhyChooseUs from "../component/WhyChooseUs";
 import BrowseCategories from "../component/BrowseCategories";
 import AboutUs from "../component/AboutUs";
+import Footer from "../component/Footer";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <WhyChooseUs />
       <BrowseCategories />
       <AboutUs />
+      <Footer/>
     </>
   );
 };
