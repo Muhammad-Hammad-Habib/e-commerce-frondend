@@ -32,6 +32,20 @@ const Products = () => {
       desc: "asdmas d asd asd  asdsas",
       img: demo,
     },
+    {
+      id: 5,
+      title: "asass",
+      price: 300,
+      desc: "asdmas d asd asd  asdsas",
+      img: demo,
+    },
+    {
+      id: 6,
+      title: "asass",
+      price: 300,
+      desc: "asdmas d asd asd  asdsas",
+      img: demo,
+    },
   ];
 
   const categories = ["All", "Pipe", "Ring", "Slanty", "Masala", "Classic"];
@@ -39,9 +53,9 @@ const Products = () => {
   return (
     <>
       <section className="w-full py-16 second-main-bg">
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-1">
           {/* Heading */}
-          <h2 className="text-4xl font-bold text-center text-[#5A3E2B]">
+          <h2 className="text-4xl font-bold text-center main-text-color">
             Products
           </h2>
           <p className="text-center text-[#8A6F5A] mt-2">
@@ -62,15 +76,18 @@ const Products = () => {
           </div>
 
           {/* Products grid */}
-          <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 ">
+          <div className="max-w-6xl px-2 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 ">
             {products.map((item) => (
-              <div key={item.id} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all">
+              <div
+                key={item.id}
+                className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all"
+              >
                 <img
                   src={demo}
                   alt="Papad"
-                  className="w-full h-60 object-contain p-1.5"
+                  className="w-full h-50 object-contain  p-3"
                 />
-                <div className="p-5">
+                <div className="p-3">
                   <h3 className="text-xl font-semibold main-text-color">
                     Classic
                   </h3>

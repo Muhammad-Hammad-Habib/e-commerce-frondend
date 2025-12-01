@@ -3,11 +3,11 @@ import heroSectionBlow from "../asset/heroSectionBowl.png";
 
 const HeroSection = () => {
   return (
-    <div className="second-main-bg min-h-[90vh] flex items-center px-8  md:px-20">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center w-full">
+    <div className="second-main-bg min-h-[90vh] flex items-center py-3 px-3 sm:px-8  md:px-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-5 md:gap-10 items-center w-full">
         {/* LEFT TEXT AREA */}
         <div>
-          <h1 className="text-4xl md:text-5xl font-extrabold main-text-color leading-tight">
+          <h1 className="text-4xl  md:text-5xl font-extrabold main-text-color leading-tight">
             Lorem ipsum dolor sit, amet
           </h1>
 
@@ -18,11 +18,6 @@ const HeroSection = () => {
             reiciendis deleniti esse.
           </p>
 
-          {/* bg-linear-to-r from-[#fd8e36] to-[#fbbf77]  hover:from-[#fbbf77] hover:to-[#fd8e36]  */}
-          {/* transition-all duration-300
-          shadow-md hover:shadow-lg focus:outline-none focus:ring-2 
-          focus:ring-offset-2 focus:ring-[#fd8e36]
-          text-white font-semibold rounded-lg shadow  */}
           <button className="mt-6 px-6 py-3  custom-button">Shop Now</button>
         </div>
 
@@ -31,7 +26,7 @@ const HeroSection = () => {
           <img
             src={heroSectionBlow}
             alt="Kacha Papad Bowl"
-            className="w-fit md:w-[95%] drop-shadow-xl"
+            className="w-fit sm:w-[95%] drop-shadow-xl"
           />
         </div>
       </div>

@@ -2,8 +2,8 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className=" py-10 px-6 " id="contect">
-      <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10">
+    <footer className=" p-3 sm:py-10 sm:px-6 " id="contect">
+      <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-10">
         {/* Brand */}
         <div>
           <h2 className="text-2xl font-extrabold main-text-color">
@@ -15,7 +15,7 @@ const Footer = () => {
           </p>
 
           {/* Social Icons */}
-          <div className="flex gap-2 mt-4">
+          <div className="flex gap-2 mt-1 sm:mt-4">
             <a
               href="#"
               className="w-10 h-10 flex items-center justify-center rounded-full custom-button transition shadow-md"
@@ -46,7 +46,7 @@ const Footer = () => {
           <h3 className="text-lg font-semibold main-text-color mb-3">
             Quick Links
           </h3>
-          <ul className="space-y-2 text-[#6f4e20]">
+          <ul className="sm:space-y-2 text-[#6f4e20]">
             <li className="hover:text-[#D86F1A] cursor-pointer">Home</li>
             <li className="hover:text-[#D86F1A] cursor-pointer">Shop</li>
             <li className="hover:text-[#D86F1A] cursor-pointer">About Us</li>
@@ -59,7 +59,7 @@ const Footer = () => {
           <h3 className="text-lg font-semibold main-text-color mb-3">
             Categories
           </h3>
-          <ul className="space-y-2 text-[#6f4e20]">
+          <ul className="space-y-0 sm:space-y-2 text-[#6f4e20]">
             <li className="hover:text-[#D86F1A] cursor-pointer">Pipe Papad</li>
             <li className="hover:text-[#D86F1A] cursor-pointer">Ring Papad</li>
             <li className="hover:text-[#D86F1A] cursor-pointer">
@@ -73,7 +73,7 @@ const Footer = () => {
           <h3 className="text-lg font-semibold main-text-color mb-3">
             Contact Us
           </h3>
-          <ul className="space-y-2 text-[#6f4e20] text-sm">
+          <ul className=" space-y-0 sm:space-y-2 text-[#6f4e20] text-sm">
             <li>Email: s.pk</li>
             <li>Phone: +92 300 1234567</li>
             <li>Location: Karachi, Pakistan</li>

@@ -3,7 +3,7 @@ import demo from "../asset/heroSectionBowl.png";
 
 const AboutUs = () => {
   return (
-    <section className="w-full second-main-bg py-20 px-6 lg:px-20">
+    <section className="w-full second-main-bg p-4 sm:py-20 sm:px-6 lg:px-20">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* --- Left Content --- */}
         <div>
@@ -11,7 +11,7 @@ const AboutUs = () => {
             About Us
           </h2>
 
-          <p className="text-[#6f4e20] leading-relaxed text-lg mb-6">
+          <p className="text-[#6f4e20] leading-relaxed text-lg mb-3 sm:mb-6">
             At <span className="font-bold main-text-color">KachaPapad.pk</span>,
             we bring you handcrafted, fresh, and authentic kacha papad made with
             premium natural ingredients. Our recipes stay true to traditional
