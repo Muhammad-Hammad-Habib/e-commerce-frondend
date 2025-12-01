@@ -5,6 +5,7 @@ import LandingPage from "./layout/LandingPageLayout";
 import Home from "./pages/Home";
 import Products from "./component/Products";
 import Checkout from "./component/Checkout";
+import User from "./Dashboard/User/UserDashboard";
 // import CheckoutPageLayout from "./layout/";
 
 const router = createBrowserRouter([
@@ -13,8 +14,9 @@ const router = createBrowserRouter([
     path: "/",
     element: <LandingPage />,
     children: [
+      // Pages route start
       {
-        path: "",
+        index: true,
         element: <Home />,
       },
       {
@@ -25,7 +27,7 @@ const router = createBrowserRouter([
         path: "/checkout",
         element: <Checkout />,
       },
-            {
+      {
         path: "/signin",
         element: <SignIn />,
       },
@@ -33,8 +35,19 @@ const router = createBrowserRouter([
         path: "/signup",
         element: <SignUp />,
       },
+      // Pages route end
+
+      // User route start
+      {
+        path: "/user",
+        children: [
+          {
+            index: true,
+            element: <User />,
+          },
+        ],
+      },
     ],
   },
-  
 ]);
 export default router;
