@@ -2,12 +2,8 @@ import { NavLink } from "react-router-dom";
 
 const SignUp = () => {
   return (
-    <div className="flex justify-center items-center second-main-bg h-[calc(100vh-65px)] bg-[#FFF6E5]">
-      <div
-        className="w-full max-w-3xl flex flex-col justify-center px-4 sm:px-8 py-4 
-                  bg-[#FFF6E5] border border-[#FFD89C] 
-                  md:rounded-2xl shadow-xl"
-      >
+    <div className="flex justify-center items-center second-main-bg p-4 md:p-0  min-h-[calc(100vh-65px)] bg-[#FFF6E5]">
+      <div className="w-full max-w-3xl flex flex-col justify-center px-4 sm:px-8 py-4 bg-[#FFF6E5] border border-[#FFD89C] rounded-2xl shadow-xl">
         {/* Logo & Heading */}
         <div className="mx-auto text-center">
           <h2 className="mt-6 text-3xl font-bold tracking-tight main-text-color">
@@ -21,7 +17,7 @@ const SignUp = () => {
 
         {/* Form Section */}
         <div className="mt-5">
-          <form className="grid grid-cols-1 md:grid-cols-2 gap-0.5 sm:gap-2">
+          <form className="grid grid-cols-1 sm:grid-cols-2 gap-0.5 sm:gap-2">
             {/* Input Fields */}
             {/* Repeat for Full Name, Email, Phone, Address, Password, Confirm Password, City, Country */}
             <div>

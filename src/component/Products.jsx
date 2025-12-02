@@ -75,36 +75,49 @@ const Products = () => {
             ))}
           </div>
 
-          {/* Products grid */}
-          <div className="max-w-6xl px-2 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 ">
-            {products.map((item) => (
-              <div
-                key={item.id}
-                className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all"
-              >
-                <img
-                  src={demo}
-                  alt="Papad"
-                  className="w-full h-50 object-contain  p-3"
-                />
-                <div className="p-3">
-                  <h3 className="text-xl font-semibold main-text-color">
-                    Classic
-                  </h3>
-                  <p className="text-gray-600 mt-1">
-                    Crispy, fresh and handmade.
-                  </p>
-                  <p className="text-lg font-bold text-[#ce6c45] mt-3">
-                    Rs. 240
-                  </p>
 
-                  <button className="mt-4 w-full flex items-center justify-center py-2 custom-button">
-                    <span>Add to Cart</span>
-                  </button>
+          <div className="gap-2 px-1.5 mx-auto grid grid-cols-2 sm:px-4 sm:grid-cols-2 sm:gap-5 md:grid-cols-3 lg:grid-cols-4 text-center">
+            {/* Card 1 */}
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((value) => {
+              return (
+                <div
+                  key={value}
+                  className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all"
+                >
+                  <img
+                    src={demo}
+                    alt="Papad"
+                    className="w-full rounded-2xl sm:rounded-3xl p-1 sm:p-3"
+                  />
+                  <div className="p-1.5 sm:p-3">
+                    <h3 className="text-xl font-semibold main-text-color">
+                      Classic
+                    </h3>
+                    <p className="text-gray-600 sm:mt-1 ">
+                      Crispy, fresh and handmade.
+                    </p>
+                    <div className="sm:grid sm:grid-cols-2 justify-center items-center">
+                      <p className="text-lg font-bold text-[#ce6c45] sm:mt-3">
+                        Rs. 240
+                      </p>
+
+                      <button className="mt-1 sm:mt-4 w-full m-auto flex items-center justify-center py-2 custom-button">
+                        <span>Add to Cart</span>
+                      </button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
+
+
+
+
+
+
+          {/* Products grid */}
+
 
           {/* Pagination */}
           {/* <div className="flex justify-center gap-4 mt-12 text-[#7a5336]">

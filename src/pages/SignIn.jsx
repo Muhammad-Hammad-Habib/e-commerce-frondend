@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const SignIn = () => {
   return (
-    <div className="flex justify-center items-center second-main-bg h-[calc(100vh-65px)]">
+    <div className="flex justify-center items-center px-4  second-main-bg min-h-[calc(100vh-65px)]">
       <div className="flex w-full max-w-md flex-col justify-center px-6 py-12 lg:px-8 bg-[#FFF6E5] rounded-2xl shadow-xl">
         {/* Logo & Heading */}
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
