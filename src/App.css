@@ -52,6 +52,25 @@
 
 
 
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
 /* .custom-button {
   background: linear-gradient(90deg, #ff7a00, #ff9500) !important;
   color: white !important;
