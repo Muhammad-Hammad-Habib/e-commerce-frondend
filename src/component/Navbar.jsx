@@ -31,10 +31,11 @@ const Navbar = ({ toggleCart }) => {
   return (
     <Disclosure
       as="nav"
-      className="sticky border-b-1 border-[#f79854] bg-[#FFF6E5] z-1 top-0 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10"
+      className="sticky border-b border-[#f79854] bg-[#FFF6E5] z-1 top-0 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10"
     >
       <div className="mx-auto max-w px-2 sm:px-6 lg:px-4">
         <div className="relative flex h-16 items-center justify-between">
+          {/* Logo and hamburger */}
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
             <DisclosureButton className=" text-[#ff6900] group relative inline-flex items-center justify-center rounded-md p-2  hover:bg-white/5 focus:outline-2 focus:-outline-offset-1 focus:outline-[#ff6900]">
@@ -55,12 +56,15 @@ const Navbar = ({ toggleCart }) => {
               />
             </DisclosureButton>
           </div>
+          {/* Nav link sm > */}
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
+            {/* web Logo */}
             <div className="flex shrink-0 items-center">
               <img alt="Your Company" src={logo} className="h-10 w-auto" />
             </div>
-            <div className="hidden sm:ml-6 sm:block">
-              <div className="flex space-x-4">
+            {/* links */}
+            <div className="hidden sm:w-full sm:ml-6 sm:block">
+              <div className="flex space-x-4 justify-center">
                 {navigation.map((item, key) => (
                   <NavLink
                     key={item.name}
@@ -80,6 +84,7 @@ const Navbar = ({ toggleCart }) => {
               </div>
             </div>
           </div>
+          {/* Logo Cart and sign up */}
           <div className="absolute inset-y-0 right-0 flex items-center pr-1 sm:static sm:inset-auto sm:ml-4 sm:pr-0">
             <NavLink
               to="signin"
