@@ -53,7 +53,7 @@ const Products = () => {
   return (
     <>
       <section className="w-full py-16 second-main-bg">
-        <div className="max-w-6xl mx-auto px-1">
+        <div className="max-w-7xl mx-auto px-1">
           {/* Heading */}
           <h2 className="text-4xl font-bold text-center main-text-color">
             Products
