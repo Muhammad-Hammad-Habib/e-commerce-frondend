@@ -6,6 +6,10 @@ import Home from "./pages/Home";
 import Products from "./component/Products";
 import Checkout from "./component/Checkout";
 import User from "./Dashboard/User/UserDashboard";
+import AdminDashboardLayout from "./layout/AdminDashboardLayout";
+import AdminHome from "./Dashboard/Admin/AdminHome";
+import CategoryManager from "./Dashboard/Admin/CategoryManager";
+import ProductsManager from "./Dashboard/Admin/ProductsManager";
 // import CheckoutPageLayout from "./layout/";
 
 const router = createBrowserRouter([
@@ -20,26 +24,26 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/products",
+        path: "products",
         element: <Products />,
       },
       {
-        path: "/checkout",
+        path: "checkout",
         element: <Checkout />,
       },
       {
-        path: "/signin",
+        path: "signin",
         element: <SignIn />,
       },
       {
-        path: "/signup",
+        path: "signup",
         element: <SignUp />,
       },
       // Pages route end
 
-      // User route start
+      // User route start from here
       {
-        path: "/user",
+        path: "user",
         children: [
           {
             index: true,
@@ -47,6 +51,16 @@ const router = createBrowserRouter([
           },
         ],
       },
+    ],
+  },
+
+  {
+    path: "/admin",
+    element: <AdminDashboardLayout />,
+    children: [
+      { index: true, element: <AdminHome /> },
+      { path:"category-manager", element: <CategoryManager /> },
+      { path:"product-manager", element: <ProductsManager /> },
     ],
   },
 ]);
