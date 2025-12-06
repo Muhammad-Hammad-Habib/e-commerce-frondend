@@ -10,6 +10,7 @@ import AdminDashboardLayout from "./layout/AdminDashboardLayout";
 import AdminHome from "./Dashboard/Admin/AdminHome";
 import CategoryManager from "./Dashboard/Admin/CategoryManager";
 import ProductsManager from "./Dashboard/Admin/ProductsManager";
+import OrderManager from "./Dashboard/Admin/OrderManager";
 // import CheckoutPageLayout from "./layout/";
 
 const router = createBrowserRouter([
@@ -61,6 +62,7 @@ const router = createBrowserRouter([
       { index: true, element: <AdminHome /> },
       { path:"category-manager", element: <CategoryManager /> },
       { path:"product-manager", element: <ProductsManager /> },
+      { path:"order-manager", element: <OrderManager /> },
     ],
   },
 ]);
