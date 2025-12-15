@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 const Checkout = () => {
   const [paymentMethod, setPaymentMethod] = useState("cod");
+
   const provinces = [
     "Sindh",
     "Punjab",
@@ -9,6 +10,7 @@ const Checkout = () => {
     "Balochistan",
     "Gilgit Baltistan",
   ];
+
   const areas = [
     "Qasimabad",
     "Latifabad",
@@ -19,197 +21,162 @@ const Checkout = () => {
   ];
 
   return (
-    <div className=" min-h-[calc(100vh-65px)] bg-[#f7e1bc] px-4 sm:px-6 py-5 sm:py-8 flex justify-center">
-      <div className=" w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-10">
-        {/* LEFT SIDE — FORM */}
-        <div className="md:col-span-2 ">
-          <h1 className="text-4xl font-bold main-text-color mb-6">
+    <div className="min-h-screen bg-[#f7e1bc] px-4 sm:px-6 py-6 flex justify-center">
+      <div className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* LEFT — FORM */}
+        <div className="md:col-span-2 space-y-6">
+          <h1 className="text-4xl font-bold main-text-color">
             Billing & Shipping
           </h1>
 
-          <h2 className="text-lg font-semibold main-text-color mb-3">
-            Delivery Information
-          </h2>
+          <div>
+            <h2 className="text-lg font-semibold main-text-color mb-2">
+              Delivery Information
+            </h2>
 
-          <div className="space-x-1 grid sm:grid-cols-2 sm:gap-2">
-            {/* Full name */}
-            <input
-              type="text"
-              placeholder="Full name"
-              className="w-full input-field"
-            />
-            {/* Phone Number*/}
-            <input
-              type="tel"
-              pattern="[0-9]{11}"
-              placeholder="Phone Number (i.e 03xxxxxxxxx)*"
-              className="w-full input-field"
-            />
-            {/* Whatsapp number */}
-            <input
-              type="tel"
-              pattern="[0-9]{11}"
-              placeholder="WhatsApp Number (i.e 03xxxxxxxxx)*"
-              className="w-full input-field"
-            />
-            {/* Alternate Phone Number */}
-            <input
-              type="tel"
-              pattern="[0-9]{11}"
-              placeholder="Alternate Phone Number (i.e 03xxxxxxxxx)*"
-              className="w-full input-field"
-            />
-            {/* Email Address  */}
-            <input
-              type="email"
-              placeholder="Email Address (i.e abc@gmail.com)*"
-              className="w-full input-field"
-            />
-            {/* Province */}
-            <select className="w-full input-field">
-              <option>Select Province*</option>
-              {provinces.map((p, i) => (
-                <option key={i}>{p}</option>
-              ))}
-            </select>
+            <div className="grid sm:grid-cols-2 gap-1">
+              <input
+                type="text"
+                placeholder="Full name"
+                className="input-field"
+              />
+              <input
+                type="tel"
+                placeholder="Phone Number (03xxxxxxxxx)*"
+                className="input-field"
+              />
+              <input
+                type="tel"
+                placeholder="WhatsApp Number (03xxxxxxxxx)*"
+                className="input-field"
+              />
+              <input
+                type="email"
+                placeholder="Email Address"
+                className="input-field"
+              />
 
-            {/* Area */}
-            <select className=" w-full input-field">
-              <option>Select Area*</option>
-              {areas.map((a, i) => (
-                <option key={i}>{a}</option>
-              ))}
-            </select>
-            {/* Shipping Address  */}
-            <input
-              type="text"
-              placeholder="Shipping Address"
-              className="w-full input-field"
-            />
+              <select className="input-field">
+                <option>Select Province*</option>
+                {provinces.map((p) => (
+                  <option key={p}>{p}</option>
+                ))}
+              </select>
 
-            <textarea
-              rows="2"
-              placeholder="Any Instructions (Optional)"
-              className="input-field sm:col-span-2 resize-none"
-            ></textarea>
+              <select className="input-field">
+                <option>Select Area*</option>
+                {areas.map((a) => (
+                  <option key={a}>{a}</option>
+                ))}
+              </select>
+
+              <input
+                type="text"
+                placeholder="Shipping Address"
+                className="input-field sm:col-span-2"
+              />
+
+              <textarea
+                rows="2"
+                placeholder="Any Instructions (Optional)"
+                className="input-field sm:col-span-2 resize-none"
+              />
+            </div>
           </div>
 
-          {/* Payment */}
-          <div className="">
-            <h2 className="d-d-block text-xl font-semibold main-text-color mt-4 mb-3">
-              Payment
+          {/* PAYMENT */}
+          <div className="mt-1">
+            <h2 className="text-xl font-semibold main-text-color mb-3">
+              Payment Instructions
             </h2>
-            <div className="space-y-3 flex ">
-              <label className="flex m-0 pr-4 items-center gap-2 cursor-pointer">
-                <input
-                  type="radio"
-                  name="payment"
-                  checked={paymentMethod === "cod"}
-                  onChange={() => setPaymentMethod("cod")}
-                  className="w-4 h-4 text-orange-500"
-                />
-                <span className="text-[#4A2E0F]">Cash on Delivery</span>
-              </label>
 
-              <label className="flex items-center  gap-2  cursor-not-allowed opacity-50">
-                <input
-                  disabled
-                  type="radio"
-                  name="payment"
-                  checked={paymentMethod === "bank"}
-                  onChange={() => setPaymentMethod("bank")}
-                  className="w-4 h-4 text-orange-500"
-                />
-                <span className="text-[#4A2E0F]">
-                  Bank Transfer - Disabled for now
-                </span>
-              </label>
+            <div className="bg-white p-4 rounded-lg text-[#4A2E0F] text-sm">
+              <ul className="list-disc pl-5 space-y-1">
+                <li>
+                  A minimum <strong>10% advance payment</strong> is required to
+                  confirm your order.
+                </li>
+                <li>
+                  <strong>Cash on Delivery</strong> is available{" "}
+                  <strong>only for Hyderabad & Latifabad</strong>. For all other
+                  cities,{" "}
+                  <strong>
+                    full payment must be completed before dispatch
+                  </strong>
+                  .
+                </li>
+                <li>
+                  Orders are dispatched only after successful{" "}
+                  <strong>payment verification</strong>.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
 
-        {/* RIGHT SIDE — ORDER SUMMARY */}
-        <div className="min-h-100 relative bg-white rounded-xl shadow-md p-4 md:p-3 lg:p-6  ">
-          <h2 className="text-xl font-semibold text-[#4A2E0F] mb-5">
+        {/* RIGHT — ORDER SUMMARY */}
+        <div className="bg-white rounded-xl shadow-md p-5 flex flex-col">
+          <h2 className="text-xl font-semibold text-[#4A2E0F] mb-4">
             Your Order
           </h2>
 
-          <div className=" max-h-35  md:max-h-50  md:h-60 overflow-auto text-[#4A2E0F] ">
-            <div className=" space-y-1">
-              {/*  */}
-              {/* {[1, 2, 3, 5, 6, 7, 8, 9, 0, 11, 22, 33 ].map(() => { */}
-              {[1, 2, 3, 5, 6, 7, 8, 9, 0, 11, 22, 33].map((value) => {
-                return (
-                  <div key={value} className="flex justify-between">
-                    <span>Classic Pipe Papad</span>
-                    <span>Rs. 250</span>
-                  </div>
-                );
-              })}
-            </div>
+          <div className="grid grid-cols-[50%_25%_25%] text-md sm:text-lg font-medium text-[#4A2E0F] mb-2">
+            <span>Item</span>
+            <span className="text">Unit</span>
+            <span className="text-center">Price</span>
+          </div>
+          <hr className="border-[#E4D5C7] mb-1" />
+
+          <div className="flex-1  max-h-65  overflow-auto text-[#4A2E0F]">
+            {/* {[1, 2, 3, 4, 5, 63, 4, 5, 63, 4, 5, 6, 3, 4, 5, 6, 7, 8, 9, 10, 11,12, 14,].map((i) => ( */}
+            {[1, 2, 3].map((i) => (
+              <div key={i} className="grid grid-cols-[50%_25%_25%] text-sm">
+                <span>Classic Pipe Papad</span>
+                <span className="text-center">1 KG</span>
+                <span className="text-right">Rs. 250</span>
+              </div>
+            ))}
           </div>
 
-          <div className=" absolute bottom-0 left-0 w-full p-6  ">
-            <hr className="my-2 border-[#E4D5C7]" />
-            <div className="flex justify-between font-medium mb-0">
+          <div className="mt-2 pt-4 border-t border-[#E4D5C7] space-y-1">
+            <div className="flex justify-between font-medium">
               <span>Subtotal</span>
-              <span>Rs. 790</span>
+              <span>Rs. 750</span>
             </div>
-
-            <div className="flex justify-between font-medium mb-0">
+            <div className="flex justify-between font-medium">
               <span>Shipping</span>
-              <span className="text-green-600 font-semibold">Free</span>
+              <span className="text-green-600">Free</span>
+            </div>
+            <div className="flex justify-between text-lg font-bold">
+              <span>Total</span>
+              <span>Rs. 750</span>
             </div>
 
-            <div className="flex justify-between text-lg font-bold mt-2">
-              <span>Total</span>
-              <span>Rs. 790</span>
-            </div>
-            {/* Place Order Button */}
-            <button className="w-full mt-6  custom-button font-semibold py-3  transition-all">
-              Place Order
+            <button className="mt-1 sm:mt-4 w-full m-auto flex items-center justify-center py-2 custom-button">
+              <span>Add to Cart</span>
             </button>
           </div>
         </div>
 
-        {/* CHECKOUT INSTRUCTIONS */}
-        <div className="bg-white rounded-xl shadow-md p-5 my-5 ">
+        {/* INSTRUCTIONS */}
+        <div className="bg-white rounded-xl md:col-span-3 shadow-md p-5">
           <h2 className="text-xl font-semibold text-[#4A2E0F] mb-3">
             Instructions
           </h2>
 
-          <ul className="space-y-2 text-[#4A2E0F] leading-relaxed">
-            <li className="flex items-start gap-2">
-              <span className="text-orange-500 font-bold">•</span>
-              Please enter your **correct phone number** so our delivery team
-              can contact you.
+          <ul className="space-y-2 text-[#4A2E0F] text-sm">
+            <li>
+              • Please enter a valid phone number for delivery coordination.
             </li>
-
-            <li className="flex items-start gap-2">
-              <span className="text-orange-500 font-bold">•</span>
-              Provide a **complete shipping address** including house number,
-              street, and nearest landmark.
+            <li>
+              • Provide a complete and accurate shipping address, including a
+              nearby landmark.
             </li>
-
-            <li className="flex items-start gap-2">
-              <span className="text-orange-500 font-bold">•</span>
-              Double-check your **order summary** before placing the order.
+            <li>
+              • Review your order details carefully before placing the order.
             </li>
-
-            <li className="flex items-start gap-2">
-              <span className="text-orange-500 font-bold">•</span>
-              Cash on Delivery is currently available; **keep the amount ready**
-              during delivery.
-            </li>
-
-            <li className="flex items-start gap-2">
-              <span className="text-orange-500 font-bold">•</span>
-              Delivery may take **2 – 3 working days** depending on your city.
-            </li>
-
-            <li className="flex items-start gap-2">
-              <span className="text-orange-500 font-bold">•</span>
-              For any issue, contact us on WhatsApp after placing your order.
+            <li>
+              • Estimated delivery time is <strong>2–3 working days</strong>.
             </li>
           </ul>
         </div>

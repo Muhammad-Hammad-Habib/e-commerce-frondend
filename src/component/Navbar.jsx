@@ -14,7 +14,7 @@ const Navbar = ({ toggleCart }) => {
   const [navigation, setNavigation] = useState([
     { name: "Home", href: "/", current: true },
     { name: "Products", href: "/products", current: false },
-    { name: "About", href: "#", current: false },
+    { name: "About", href: "#about", current: false },
     { name: "Contact", href: "#contect", current: false },
   ]);
 
@@ -65,22 +65,43 @@ const Navbar = ({ toggleCart }) => {
             {/* links */}
             <div className="hidden sm:w-full sm:ml-6 sm:block">
               <div className="flex space-x-4 justify-center">
-                {navigation.map((item, key) => (
-                  <NavLink
-                    key={item.name}
-                    to={item.href}
-                    onClick={() => handleOnClickActive(key)}
-                    aria-current={item.current ? "page" : undefined}
-                    className={classNames(
-                      item.current
-                        ? "custom-button"
-                        : "text-[#ff6900] hover:bg-white/5 hover:text-[#d75a00]",
-                      "rounded-md px-2 py-2 text-md font-medium"
-                    )}
-                  >
-                    {item.name}
-                  </NavLink>
-                ))}
+                {navigation.map((item, key) => {
+                  console.log(item.href[0]);
+                  if (item.href[0] == "#") {
+                    return (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        onClick={() => handleOnClickActive(key)}
+                        aria-current={item.current ? "page" : undefined}
+                        className={classNames(
+                          item.current
+                            ? "custom-button"
+                            : "text-[#ff6900] hover:bg-white/5 hover:text-[#d75a00]",
+                          "rounded-md px-2 py-2 text-md font-medium"
+                        )}
+                      >
+                        {item.name}
+                      </a>
+                    );
+                  }
+                  return (
+                    <NavLink
+                      key={item.name}
+                      to={item.href}
+                      onClick={() => handleOnClickActive(key)}
+                      aria-current={item.current ? "page" : undefined}
+                      className={classNames(
+                        item.current
+                          ? "custom-button"
+                          : "text-[#ff6900] hover:bg-white/5 hover:text-[#d75a00]",
+                        "rounded-md px-2 py-2 text-md font-medium"
+                      )}
+                    >
+                      {item.name}
+                    </NavLink>
+                  );
+                })}
               </div>
             </div>
           </div>

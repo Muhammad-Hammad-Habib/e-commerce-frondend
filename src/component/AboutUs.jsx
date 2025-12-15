@@ -3,7 +3,7 @@ import demo from "../asset/heroSectionBowl.png";
 
 const AboutUs = () => {
   return (
-    <section className="w-full second-main-bg p-4 sm:py-20 sm:px-6 lg:px-20">
+    <section id="about" className="w-full second-main-bg p-4 sm:py-20 sm:px-6 lg:px-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* --- Left Content --- */}
         <div>
