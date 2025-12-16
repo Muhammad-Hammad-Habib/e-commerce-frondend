@@ -3,7 +3,7 @@ import heroSectionBlow from "../asset/heroSectionBowl.png";
 
 const HeroSection = () => {
   return (
-    <div className="second-main-bg min-h-[90vh] flex items-center py-3 px-3 sm:px-8  md:px-10">
+    <div className=" second-main-bg min-h-[90vh] flex items-center py-3 px-3 sm:px-8  md:px-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-5 md:gap-10 items-center w-full">
         {/* LEFT TEXT AREA */}
         <div>

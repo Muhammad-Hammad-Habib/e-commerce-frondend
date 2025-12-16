@@ -6,7 +6,7 @@ const CartSideBar = ({ isOpen, toggleCart }) => {
   return (
     <div
       className={`fixed top-0 right-0 h-full w-90 bg-[#FFF6E5] shadow-2xl 
-      transition-transform duration-300 z-50
+      transition-transform duration-300 z-50 flex flex-col
       ${isOpen ? "translate-x-0" : "translate-x-full"}`}
     >
       {/* HEADER */}
@@ -18,11 +18,15 @@ const CartSideBar = ({ isOpen, toggleCart }) => {
       </div>
 
       {/* ITEMS */}
-      <div className="p-2 space-y-4 overflow-y-auto h-[65%]">
+      <div className="p-2  space-y-1 overflow-y-auto flex-1">
         {/* Item Card */}
-        {[1, 2, 3, 4, 5, 6].map((value) => {
+        {[1, 2, 3, 4, 5, 6,7,8,9,10,11,12,13,14].map((value) => {
+        {/* {[1, 2, 3].map((value) => { */}
           return (
-            <div key={value} className="flex items-center bg-white p-1 rounded-xl shadow-sm border border-orange-100">
+            <div
+              key={value}
+              className="flex items-center bg-white p-1 rounded-xl shadow-sm border border-orange-100"
+            >
               <img
                 src={demo}
                 className="w-auto h-14 object-contain rounded-lg"
@@ -54,7 +58,7 @@ const CartSideBar = ({ isOpen, toggleCart }) => {
       </div>
 
       {/* TOTAL */}
-      <div className=" fixed bottom-0 w-full p-2 border-t border-orange-200">
+      <div className="  bottom-0 w-full p-2 border-t border-orange-200">
         <div className="flex justify-between text-[#75451C] text-md">
           <span>Subtotal:</span>
           <span>Rs. 820</span>
@@ -89,6 +93,6 @@ const CartSideBar = ({ isOpen, toggleCart }) => {
 };
 
 export default CartSideBar;
-    // position: fixed;
-    // width: 100%;
-    // bottom: 0px
+// position: fixed;
+// width: 100%;
+// bottom: 0px

@@ -3,8 +3,8 @@ import demo from "../asset/heroSectionBowl.png";
 
 const AboutUs = () => {
   return (
-    <section id="about" className="w-full second-main-bg p-4 sm:py-20 sm:px-6 lg:px-20">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <section id="about" className="w-full second-main-bg  sm:py-20  ">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12  items-center     sm:px-8  md:px-10">
         {/* --- Left Content --- */}
         <div>
           <h2 className="text-3xl md:text-4xl font-extrabold text-[#5C3B0B] mb-4">
@@ -26,7 +26,7 @@ const AboutUs = () => {
         </div>
 
         {/* --- Right Image --- */}
-        <div className="flex justify-center">
+        <div className="flex justify-center md:justify-end">
           <img
             src={demo}
             alt="About Us"

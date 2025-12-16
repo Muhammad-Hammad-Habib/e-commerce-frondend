@@ -128,9 +128,9 @@ const Checkout = () => {
           <hr className="border-[#E4D5C7] mb-1" />
 
           <div className="flex-1  max-h-65  overflow-auto text-[#4A2E0F]">
-            {/* {[1, 2, 3, 4, 5, 63, 4, 5, 63, 4, 5, 6, 3, 4, 5, 6, 7, 8, 9, 10, 11,12, 14,].map((i) => ( */}
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="grid grid-cols-[50%_25%_25%] text-sm">
+            {[1, 2, 3, 4, 5, 63, 4, 5, 63, 4, 5, 6, 3, 4, 5, 6, 7, 8, 9, 10, 11,12, 14,].map((i) => (
+            // {[1, 2, 3].map((i) => (
+              <div key={i} className="grid grid-cols-[50%_25%_25%] text-md">
                 <span>Classic Pipe Papad</span>
                 <span className="text-center">1 KG</span>
                 <span className="text-right">Rs. 250</span>
