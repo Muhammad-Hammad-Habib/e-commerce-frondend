@@ -1,9 +1,41 @@
 import demo from "../asset/heroSectionBowl.png";
+import ProductCard from "./ProductCard";
+
+const products = [
+  {
+    id: 1,
+    title: "Classic ",
+    price: 250,
+    desc: "asdmas d asd asd  asdsas",
+    img: demo,
+  },
+  {
+    id: 2,
+    title: "assa",
+    price: 300,
+    desc: "asdmas d asd asd  asdsas",
+    img: demo,
+  },
+  {
+    id: 3,
+    title: "asas",
+    price: 300,
+    desc: "asdmas d asd asd  asdsas",
+    img: demo,
+  },
+  {
+    id: 4,
+    title: "asass",
+    price: 300,
+    desc: "asdmas d asd asd  asdsas",
+    img: demo,
+  },
+];
 const FeaturedProducts = () => {
   return (
-    <section className="w-full py-16 ">
+    <section className="w-full py-16 px-3  sm:px-8  md:px-10">
       {/* Section heading */}
-      <div className="text-center mb-12">
+      <div className="text-center mb-12 ">
         <h2 className="text-4xl font-extrabold main-text-color tracking-wide">
           Featured Products
         </h2>
@@ -14,39 +46,11 @@ const FeaturedProducts = () => {
 
       {/* Products Grid */}
       {/* <div className="px-4 mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 text-center"> */}
-      <div className="gap-2 px-1.5 mx-auto grid grid-cols-2 sm:px-4 sm:grid-cols-2 sm:gap-5 md:grid-cols-3 lg:grid-cols-4 text-center">
+      <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {/* Card 1 */}
-        {[1, 2, 3, 4].map((value) => {
-          return (
-            <div
-              key={value}
-              className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all"
-            >
-              <img
-                src={demo}
-                alt="Papad"
-                className="w-full rounded-2xl sm:rounded-3xl p-1 sm:p-3"
-              />
-              <div className="p-1.5 sm:p-3">
-                <h3 className="text-xl font-semibold main-text-color">
-                  Classic
-                </h3>
-                <p className="text-gray-600 sm:mt-1 ">
-                  Crispy, fresh and handmade.
-                </p>
-                <div  className="sm:grid sm:grid-cols-2 justify-center items-center">
-                  <p className="text-lg font-bold text-[#ce6c45] sm:mt-3">
-                    Rs. 240
-                  </p>
-
-                  <button className="mt-1 sm:mt-4 w-full m-auto flex items-center justify-center py-2 custom-button">
-                    <span>Add to Cart</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          );
-        })}
+        {products.map((item) => (
+          <ProductCard key={item.id} product={item} />
+        ))}
       </div>
     </section>
   );

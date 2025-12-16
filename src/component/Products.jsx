@@ -1,6 +1,7 @@
 import React from "react";
 import demo from "../asset/heroSectionBowl.png";
 import Footer from "./Footer";
+import ProductCard from "./ProductCard";
 
 const Products = () => {
   const products = [
@@ -13,35 +14,42 @@ const Products = () => {
     },
     {
       id: 2,
-      title: "assa",
+      title: "Classic",
       price: 300,
       desc: "asdmas d asd asd  asdsas",
       img: demo,
     },
     {
       id: 3,
-      title: "asas",
+      title: "Classic",
       price: 300,
       desc: "asdmas d asd asd  asdsas",
       img: demo,
     },
     {
       id: 4,
-      title: "asass",
+      title: "Classic",
       price: 300,
       desc: "asdmas d asd asd  asdsas",
       img: demo,
     },
     {
       id: 5,
-      title: "asass",
+      title: "Classic",
       price: 300,
       desc: "asdmas d asd asd  asdsas",
       img: demo,
     },
     {
       id: 6,
-      title: "asass",
+      title: "Classic",
+      price: 300,
+      desc: "asdmas d asd asd  asdsas",
+      img: demo,
+    },
+    {
+      id: 7,
+      title: "Classic",
       price: 300,
       desc: "asdmas d asd asd  asdsas",
       img: demo,
@@ -75,49 +83,13 @@ const Products = () => {
             ))}
           </div>
 
-
-          <div className="gap-2 px-1.5 mx-auto grid grid-cols-2 sm:px-4 sm:grid-cols-2 sm:gap-5 md:grid-cols-3 lg:grid-cols-4 text-center">
-            {/* Card 1 */}
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((value) => {
-              return (
-                <div
-                  key={value}
-                  className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all"
-                >
-                  <img
-                    src={demo}
-                    alt="Papad"
-                    className="w-full rounded-2xl sm:rounded-3xl p-1 sm:p-3"
-                  />
-                  <div className="p-1.5 sm:p-3">
-                    <h3 className="text-xl font-semibold main-text-color">
-                      Classic
-                    </h3>
-                    <p className="text-gray-600 sm:mt-1 ">
-                      Crispy, fresh and handmade.
-                    </p>
-                    <div className="sm:grid sm:grid-cols-2 justify-center items-center">
-                      <p className="text-lg font-bold text-[#ce6c45] sm:mt-3">
-                        Rs. 240
-                      </p>
-
-                      <button className="mt-1 sm:mt-4 w-full m-auto flex items-center justify-center py-2 custom-button">
-                        <span>Add to Cart</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
+          <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ">
+            {products.map((item) => (
+              <ProductCard key={item.id} product={item} />
+            ))}
           </div>
 
-
-
-
-
-
           {/* Products grid */}
-
 
           {/* Pagination */}
           {/* <div className="flex justify-center gap-4 mt-12 text-[#7a5336]">
