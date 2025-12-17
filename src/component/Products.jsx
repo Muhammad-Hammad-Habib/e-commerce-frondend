@@ -61,7 +61,7 @@ const Products = () => {
   return (
     <>
       <section className="w-full py-16 second-main-bg">
-        <div className="max-w-7xl mx-auto px-1">
+        <div className="max-w-7xl mx-auto">
           {/* Heading */}
           <h2 className="text-4xl font-bold text-center main-text-color">
             Products
@@ -83,7 +83,7 @@ const Products = () => {
             ))}
           </div>
 
-          <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ">
+          <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 px-3">
             {products.map((item) => (
               <ProductCard key={item.id} product={item} />
             ))}
