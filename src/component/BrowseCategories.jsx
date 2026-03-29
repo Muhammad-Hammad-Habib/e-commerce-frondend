@@ -19,7 +19,7 @@ const BrowseCategories = () => {
 
           {[1, 2, 3, 4].map((value) => {
             return (
-              <div className="group bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden border border-[#f2d5b3]">
+              <div key={value} className="group bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden border border-[#f2d5b3]">
                 {/* IMAGE */}
                 <div className="relative overflow-hidden">
                   <img

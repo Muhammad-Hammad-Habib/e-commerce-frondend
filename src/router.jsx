@@ -11,6 +11,7 @@ import AdminHome from "./Dashboard/Admin/AdminHome";
 import CategoryManager from "./Dashboard/Admin/CategoryManager";
 import ProductsManager from "./Dashboard/Admin/ProductsManager";
 import OrderManager from "./Dashboard/Admin/OrderManager";
+import ProductDetail from "./component/ProductDetails";
 // import CheckoutPageLayout from "./layout/";
 
 const router = createBrowserRouter([
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "checkout",
         element: <Checkout />,
+      },
+      {
+        path: "product-detail",
+        element: <ProductDetail />,
       },
       {
         path: "signin",
