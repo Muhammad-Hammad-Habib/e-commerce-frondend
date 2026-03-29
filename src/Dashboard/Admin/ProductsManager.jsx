@@ -1,8 +1,44 @@
 import React, { useState } from "react";
 import { FaPlus, FaTrash } from "react-icons/fa";
+import demo from "../../asset/heroSectionBowl.png";
 
 const ProductsManager = () => {
-  const [products, setProducts] = useState([]);
+  const [product, setProducts] = useState([]);
+  const products = [
+    {
+      id: 1,
+      name: "Classic Papad",
+      category: "Papad",
+      shortDesc: "Crispy handmade papad",
+      description:
+        "Traditional papad made with premium lentils, sun-dried and hygienically prepared.",
+      images: [demo, demo, demo, demo],
+      price: 300,
+      uom: "250g",
+    },
+    {
+      id: 2,
+      name: "Classic Papad",
+      category: "Papad",
+      shortDesc: "Crispy handmade papad",
+      description:
+        "Traditional papad made with premium lentils, sun-dried and hygienically prepared.",
+      images: [demo, demo, demo, demo],
+      price: 300,
+      uom: "250g",
+    },
+    {
+      id: 2,
+      name: "Classic Papad",
+      category: "Papad",
+      shortDesc: "Crispy handmade papad",
+      description:
+        "Traditional papad made with premium lentils, sun-dried and hygienically prepared.",
+      images: [demo, demo, demo, demo],
+      price: 300,
+      uom: "250g",
+    },
+  ];
 
   // Delete product
   const deleteProduct = (id) => {
@@ -33,41 +69,84 @@ const ProductsManager = () => {
           <thead>
             <tr className="border-b border-[#f2d5b3] text-[#5C3B0B]">
               <th className="py-2">Product Name</th>
+              <th className="py-2">Category</th>
+              <th className="py-2">Short Desc.</th>
+              <th className="py-2">Detail Desc.</th>
+              <th className="py-2">Product Images</th>
               <th className="py-2">Price</th>
-              <th className="py-2">Product Image</th>
+              <th className="py-2">UOM</th>
               <th className="py-2">Action</th>
             </tr>
           </thead>
 
           <tbody>
-            {products.map((p) => (
+            {products.map((product, index) => (
               <tr
-                key={p.id}
-                className="border-b border-[#f7e4cd] text-[#5A3E2B]"
+                key={index}
+                className="border-b border-[#f7e4cd] text-[#5A3E2B] hover:bg-[#fff4e6] transition"
               >
-                <td className="py-3 font-semibold">{p.name}</td>
-                <td>Rs. {p.price}</td>
-                <td>
-                  <img
-                    src={p.image}
-                    alt="img"
-                    className="w-16 h-16 rounded-lg object-cover"
-                  />
+                {/* Product Name */}
+                <td className="p-1 font-semibold">{product.name}</td>
+
+                {/* Category */}
+                <td className="p-1">{product.category}</td>
+
+                {/* Short Description */}
+                <td className="p-1 text-sm max-w-[180px] truncate">
+                  {product.shortDesc}
                 </td>
-                <td>
-                  <button
-                    onClick={() => deleteProduct(p.id)}
-                    className="text-white bg-red-500 px-3 py-1 rounded-lg flex items-center gap-1"
-                  >
-                    <FaTrash size={12} /> Delete
-                  </button>
+
+                {/* Product Description */}
+                <td className="p-1 text-sm max-w-[220px] ">
+                  {product.description}
+                </td>
+
+                {/* Images */}
+                <td className="p-1">
+                  <div className="grid grid-cols-2 ">
+                    {product.images.map((img, i) => (
+                      <img
+                        key={i}
+                        src={img}
+                        alt="product"
+                        className="w-12 h-12 rounded-lg object-cover border"
+                      />
+                    ))}
+                  </div>
+                </td>
+
+                {/* Price */}
+                <td className="p-1 font-medium text-[#E76F00]">
+                  Rs. {product.price}
+                </td>
+
+                {/* UOM */}
+                <td className="p-1">{product.uom}</td>
+
+                {/* Actions */}
+                <td className="p-1">
+                  <div className="flex gap-2">
+                    <button
+                      onClick={() => editProduct(product.id)}
+                      className="bg-[#ff8a00] text-white px-3 py-1 rounded-lg text-sm hover:bg-[#e67c00] transition"
+                    >
+                      Edit
+                    </button>
+
+                    <button
+                      onClick={() => deleteProduct(product.id)}
+                      className="bg-red-500 text-white px-3 py-1 rounded-lg text-sm hover:bg-red-600 transition"
+                    >
+                      Delete
+                    </button>
+                  </div>
                 </td>
               </tr>
             ))}
 
             {products.length === 0 && (
               <tr>
-                <td colSpan="4" className="py-4 text-center text-[#8A6F5A]">
+                <td colSpan="8" className="py-6 text-center text-[#8A6F5A]">
                   No products added yet.
                 </td>
               </tr>
@@ -168,8 +247,8 @@ const ProductPopup = ({ isOpen, onClose }) => {
                 placeholder="Product Name"
               />
             </div>
-            {/* Product Category */}
 
+            {/* Product Category */}
             <div>
               <label className="block text-sm font-medium main-text-color">
                 Category
@@ -227,19 +306,32 @@ const ProductPopup = ({ isOpen, onClose }) => {
             ))}
           </div>
 
-          {/* Price */}
-          <div className="mt-4">
-            <label className="block text-sm font-semibold main-text-color mb-1">
-              Price
-            </label>
-            <input
-              name="price"
-              value={productForm.price}
-              onChange={handleInput}
-              type="number"
-              className="w-full input-field"
-              placeholder="Rs."
-            />
+          <div className="grid grid-cols-2 gap-2 mt-1">
+            {/* Product Category */}
+            <div>
+              <label className="block text-sm font-medium main-text-color">
+                Category
+              </label>
+              <select className="w-full input-field">
+                <option value="">Select Category</option>
+                <option value="1">pc</option>
+                <option value="2">Kg</option>
+              </select>
+            </div>
+            {/* Price */}
+            <div className="">
+              <label className="block text-sm font-semibold main-text-color ">
+                Price
+              </label>
+              <input
+                name="price"
+                value={productForm.price}
+                onChange={handleInput}
+                type="number"
+                className="w-full input-field"
+                placeholder="Rs."
+              />
+            </div>
           </div>
 
           {/* Add Product Button */}
