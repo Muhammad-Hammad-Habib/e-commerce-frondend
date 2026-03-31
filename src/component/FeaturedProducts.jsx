@@ -1,4 +1,5 @@
-import demo from "../asset/heroSectionBowl.png";
+import demo1 from "../asset/productSlanty.png";
+import demo2 from "../asset/plainSlanty.png";
 import ProductCard from "./ProductCard";
 
 const products = [
@@ -7,28 +8,28 @@ const products = [
     title: "Classic ",
     price: 250,
     desc: "asdmas d asd asd  asdsas",
-    img: demo,
+    img: demo1,
   },
   {
     id: 2,
     title: "assa",
     price: 300,
     desc: "asdmas d asd asd  asdsas",
-    img: demo,
+    img: demo2,
   },
   {
     id: 3,
     title: "asas",
     price: 300,
     desc: "asdmas d asd asd  asdsas",
-    img: demo,
+    img: demo1,
   },
   {
     id: 4,
     title: "asass",
     price: 300,
     desc: "asdmas d asd asd  asdsas",
-    img: demo,
+    img: demo2,
   },
 ];
 const FeaturedProducts = () => {

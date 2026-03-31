@@ -1,4 +1,4 @@
-import demo from "../asset/heroSectionBowl.png";
+// import demo from "../asset/productSlanty.png";
 
 const ProductCard = ({ product }) => {
   return (
@@ -6,7 +6,7 @@ const ProductCard = ({ product }) => {
       {/* IMAGE */}
       <div className="relative overflow-hidden">
         <img
-          src={demo}
+          src={product.img}
           alt={product.title}
           className="w-full h-[230px]  transition-transform duration-500 group-hover:scale-105"
         />

@@ -1,5 +1,7 @@
 import React from "react";
-import demo from "../asset/heroSectionBowl.png";
+import demo1 from "../asset/plainSlanty.png";
+import demo2 from "../asset/colorRing.png";
+import demo3 from "../asset/colorSlanty.png";
 import Footer from "./Footer";
 import ProductCard from "./ProductCard";
 
@@ -10,49 +12,49 @@ const Products = () => {
       title: "Classic ",
       price: 250,
       desc: "asdmas d asd asd  asdsas",
-      img: demo,
+      img: demo1,
     },
     {
       id: 2,
       title: "Classic",
       price: 300,
       desc: "asdmas d asd asd  asdsas",
-      img: demo,
+      img: demo3,
     },
     {
       id: 3,
       title: "Classic",
       price: 300,
       desc: "asdmas d asd asd  asdsas",
-      img: demo,
+      img: demo3,
     },
     {
       id: 4,
       title: "Classic",
       price: 300,
       desc: "asdmas d asd asd  asdsas",
-      img: demo,
+      img: demo2,
     },
     {
       id: 5,
       title: "Classic",
       price: 300,
       desc: "asdmas d asd asd  asdsas",
-      img: demo,
+      img: demo2,
     },
     {
       id: 6,
       title: "Classic",
       price: 300,
       desc: "asdmas d asd asd  asdsas",
-      img: demo,
+      img: demo1,
     },
     {
       id: 7,
       title: "Classic",
       price: 300,
       desc: "asdmas d asd asd  asdsas",
-      img: demo,
+      img: demo1,
     },
   ];
 
@@ -83,7 +85,7 @@ const Products = () => {
             ))}
           </div>
 
-          <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 px-3">
+          <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  px-3">
             {products.map((item) => (
               <ProductCard key={item.id} product={item} />
             ))}

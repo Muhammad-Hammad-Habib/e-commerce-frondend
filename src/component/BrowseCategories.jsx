@@ -1,5 +1,5 @@
 import React from "react";
-import demo from "../asset/heroSectionBowl.png";
+import demo from "../asset/colorRing.png";
 
 const BrowseCategories = () => {
   return (
@@ -7,7 +7,7 @@ const BrowseCategories = () => {
       <div className="max-w-7xl mx-auto ">
         {/* Section Heading */}
         <h2 className="text-3xl font-extrabold text-center main-text-color mb-2">
-          Browse Categories asas23141
+          Browse Categories
         </h2>
         <p className="text-center text-[#7A4A21] mb-7 sm:mb-12 ">
           Find your favorite type of crunchy kacha papad
@@ -19,7 +19,10 @@ const BrowseCategories = () => {
 
           {[1, 2, 3, 4].map((value) => {
             return (
-              <div key={value} className="group bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden border border-[#f2d5b3]">
+              <div
+                key={value}
+                className="group bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden border border-[#f2d5b3]"
+              >
                 {/* IMAGE */}
                 <div className="relative overflow-hidden">
                   <img
