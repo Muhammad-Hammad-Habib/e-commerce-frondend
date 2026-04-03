@@ -1,5 +1,5 @@
 import React from "react";
-import demo from "../asset/heroSectionBowl.png";
+import demo from "../asset/plainSlanty.png";
 
 const AboutUs = () => {
   return (

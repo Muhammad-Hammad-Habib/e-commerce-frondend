@@ -1,5 +1,5 @@
 import React from "react";
-import heroSectionBlow from "../asset/heroSectionBowl.png";
+import heroSectionBlow from "../asset/colorSlanty.png";
 
 const HeroSection = () => {
   return (

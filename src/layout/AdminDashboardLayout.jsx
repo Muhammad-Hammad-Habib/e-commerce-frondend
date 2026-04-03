@@ -3,11 +3,12 @@ import Navbar from "../component/Navbar";
 import Footer from "../component/Footer";
 import CartSideBar from "../component/CartSideBar";
 import { Outlet } from "react-router-dom";
+import AdminNavbar from "../Dashboard/Admin/AdminNavbar";
 
 const AdminDashboardLayout = () => {
   return (
     <div className="container-lg bg-[#FFF6E5] ">
-      <Navbar />
+      <AdminNavbar />
       <Outlet />
     </div>
   );

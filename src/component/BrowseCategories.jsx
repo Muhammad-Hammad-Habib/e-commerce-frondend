@@ -24,11 +24,11 @@ const BrowseCategories = () => {
                 className="group bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden border border-[#f2d5b3]"
               >
                 {/* IMAGE */}
-                <div className="relative overflow-hidden">
+                <div className="relative flex justify-center overflow-hidden">
                   <img
                     src={demo}
                     alt="title"
-                    className="w-full h-[190px]  transition-transform duration-500 group-hover:scale-105"
+                    className=" md:w-full h-[230px]  transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
 

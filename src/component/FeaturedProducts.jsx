@@ -1,4 +1,4 @@
-import demo1 from "../asset/productSlanty.png";
+import demo1 from "../asset/colorSlanty.png";
 import demo2 from "../asset/plainSlanty.png";
 import ProductCard from "./ProductCard";
 
