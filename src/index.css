@@ -1,2 +1,20 @@
 @import "tailwindcss";
-@import "./App.css"
+@import "./App.css";
+
+:root {
+  --color-canvas: #fffaf5;
+  --color-surface: #fff7ed;
+  --color-surface-muted: #f8eadb;
+  --color-surface-strong: #f2dcc6;
+  --color-ink: #2f2119;
+  --color-text: #5f4638;
+  --color-brand: #b94a0a;
+  --color-brand-hover: #9f3e08;
+  --color-brand-soft: #f6d7bd;
+  --color-border: #e6cdb9;
+}
+
+body {
+  background: var(--color-canvas);
+  color: var(--color-text);
+}

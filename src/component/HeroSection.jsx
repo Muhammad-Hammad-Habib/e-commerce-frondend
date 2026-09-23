@@ -11,7 +11,7 @@ const HeroSection = () => {
             Lorem ipsum dolor sit, amet
           </h1>
 
-          <p className="text-[#6D4C33] mt-4 max-w-md">
+          <p className="text-[#5F4638] mt-4 max-w-md">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
             vitae, blanditiis assumenda quaerat dignissimos fugiat labore. Cum
             corrupti sed sequi ab veniam architecto culpa iste, molestias atque

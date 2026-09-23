@@ -45,10 +45,10 @@ const AdminHome = () => {
       {/* Header */}
       <header className="mx-auto mb-8 flex flex-col sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-[#5C3B0B]">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-[#2F2119]">
             Admin Dashboard
           </h1>
-          <p className="text-lg text-[#7A5336] mt-2">
+          <p className="text-lg text-[#5F4638] mt-2">
             Manage store activity & performance
           </p>
         </div>
@@ -65,10 +65,10 @@ const AdminHome = () => {
         {statCards.map((card) => (
           <div
             key={card.id}
-            className="bg-white rounded-2xl p-4 sm:p-6 shadow-sm border border-[#f2d5b3]"
+            className="bg-white rounded-2xl p-4 sm:p-6 shadow-sm border border-[#E6CDB9]"
           >
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-full bg-[#FFE7C6] flex items-center justify-center text-[#D86F1A] shadow">
+              <div className="w-12 h-12 rounded-full bg-[#F6D7BD] flex items-center justify-center text-[#B94A0A] shadow">
                 {card.icon}
               </div>
 
@@ -86,29 +86,29 @@ const AdminHome = () => {
       {/* Revenue + Messages */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-10">
         {/* Graph Placeholder */}
-        <div className="bg-white rounded-2xl p-4 sm:p-6 shadow-sm border border-[#f2d5b3] col-span-2">
+        <div className="bg-white rounded-2xl p-4 sm:p-6 shadow-sm border border-[#E6CDB9] col-span-2">
           <h3 className="text-lg font-semibold main-text-color mb-3">
             Total Revenue
           </h3>
-          <div className="h-48 flex items-center justify-center text-[#7A5336]">
+          <div className="h-48 flex items-center justify-center text-[#5F4638]">
             <FaChartLine size={45} className="opacity-50" />
           </div>
         </div>
 
         {/* Revenue Card */}
-        <div className="bg-white rounded-2xl p-4 sm:p-6 shadow-sm border border-[#f2d5b3]">
+        <div className="bg-white rounded-2xl p-4 sm:p-6 shadow-sm border border-[#E6CDB9]">
           <h3 className="text-lg font-semibold main-text-color mb-3">
             Total Earnings
           </h3>
-          <div className="text-3xl font-extrabold text-[#5A3E2B]">
+          <div className="text-3xl font-extrabold text-[#3F2B20]">
             Rs. 54,300
           </div>
-          <p className="text-sm text-[#8A6F5A] mt-2">This Week</p>
+          <p className="text-sm text-[#7A6252] mt-2">This Week</p>
         </div>
       </div>
 
       {/* Recent Orders Table */}
-      <div className="bg-white rounded-2xl p-4 sm:p-6 mt-10 shadow-sm border border-[#f2d5b3]">
+      <div className="bg-white rounded-2xl p-4 sm:p-6 mt-10 shadow-sm border border-[#E6CDB9]">
         <h3 className="text-lg font-semibold main-text-color mb-4">
           Recent Orders
         </h3>
@@ -116,7 +116,7 @@ const AdminHome = () => {
         <div className="overflow-x-auto">
           <table className="w-full border-collapse text-left main-text-color">
             <thead>
-              <tr className="bg-[#FFF8EF] text-sm">
+              <tr className="bg-[#FFF7ED] text-sm">
                 <th className="p-3">Order ID</th>
                 <th className="p-3">Customer</th>
                 <th className="p-3">Date</th>
@@ -130,7 +130,7 @@ const AdminHome = () => {
                 { id: "#002", user: "Fatima", date: "2 May 2024", status: "Delivered" },
                 { id: "#003", user: "Ahmed Khan", date: "1 May 2024", status: "Cancelled" },
               ].map((order) => (
-                <tr key={order.id} className="border-b border-[#f2d5b3] text-sm">
+                <tr key={order.id} className="border-b border-[#E6CDB9] text-sm">
                   <td className="p-3">{order.id}</td>
                   <td className="p-3">{order.user}</td>
                   <td className="p-3">{order.date}</td>

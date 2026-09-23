@@ -7,7 +7,7 @@ import AdminNavbar from "../Dashboard/Admin/AdminNavbar";
 
 const AdminDashboardLayout = () => {
   return (
-    <div className="container-lg bg-[#FFF6E5] ">
+    <div className="container-lg bg-[#FFF7ED] ">
       <AdminNavbar />
       <Outlet />
     </div>

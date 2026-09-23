@@ -19,7 +19,7 @@ const WhyChooseUs = () => {
         <div className="grid sm:flex sm:justify-center grid-cols-1 md:grid-cols-3 gap-8 ">
           {/* Card 1 */}
           <div className="p-6 card-bg rounded-xl shadow-sm hover:shadow-md transition">
-            <div className="flex items-center justify-center w-14 h-14 rounded-full bg-[#FFD89C] mb-4 text-2xl">
+            <div className="flex items-center justify-center w-14 h-14 rounded-full bg-[#F6D7BD] mb-4 text-2xl">
               ⭐
             </div>
             <h3 className="text-xl font-semibold main-text-color">
@@ -33,7 +33,7 @@ const WhyChooseUs = () => {
 
           {/* Card 2 */}
           <div className="p-6 card-bg rounded-xl shadow-sm hover:shadow-md transition">
-            <div className="flex items-center justify-center w-14 h-14 rounded-full bg-[#FFD89C] mb-4 text-2xl">
+            <div className="flex items-center justify-center w-14 h-14 rounded-full bg-[#F6D7BD] mb-4 text-2xl">
               🚚
             </div>
             <h3 className="text-xl font-semibold main-text-color">

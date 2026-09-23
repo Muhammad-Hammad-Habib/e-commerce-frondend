@@ -2,9 +2,9 @@
 
 const ProductCard = ({ product }) => {
   return (
-    <div className="group bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden border border-[#f2d5b3]">
+    <div className="group bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden border border-[#E6CDB9]">
       {/* IMAGE */}
-      <div className="relative flex justify-center overflow-hidden bg-[#e9e5da]">
+      <div className="relative flex justify-center overflow-hidden bg-[#F2E3D4]">
         <img
           src={product.img}
           alt={product.title}
@@ -25,7 +25,7 @@ const ProductCard = ({ product }) => {
           {product.title}
         </h3>
 
-        <p className="text-md text-[#7A5336] text-left m-0 pb-0.5">posdfbk pskjdasdp aidn apidnk ascnh asdpijh asdiphjad psdj</p>
+        <p className="text-md text-[#5F4638] text-left m-0 pb-0.5">posdfbk pskjdasdp aidn apidnk ascnh asdpijh asdiphjad psdj</p>
 
         {/* PRICE + CTA */}
         <div className="flex items-center justify-between ">

@@ -48,24 +48,24 @@ const OrderManager = () => {
   return (
     <div className="second-main-bg min-h-[calc(100vh-65px)] p-4 sm:p-8">
       {/* Page Title */}
-      <h1 className="text-3xl font-extrabold text-[#5C3B0B] mb-6">
+      <h1 className="text-3xl font-extrabold text-[#2F2119] mb-6">
         Order Management
       </h1>
 
       {/* Search Bar */}
-      <div className="flex items-center gap-2 bg-white border border-[#f2d5b3] rounded-lg w-full max-w-xl p-2 mb-6 shadow-sm">
-        <FaSearch className="text-[#D86F1A]" />
+      <div className="flex items-center gap-2 bg-white border border-[#E6CDB9] rounded-lg w-full max-w-xl p-2 mb-6 shadow-sm">
+        <FaSearch className="text-[#B94A0A]" />
         <input
           type="text"
           placeholder="Search by Order ID or Customer..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="w-full outline-none text-[#5C3B0B]"
+          className="w-full outline-none text-[#2F2119]"
         />
       </div>
 
       {/* Orders Table */}
-      <div className="bg-white rounded-2xl border border-[#f2d5b3] shadow-sm p-4 sm:p-6">
+      <div className="bg-white rounded-2xl border border-[#E6CDB9] shadow-sm p-4 sm:p-6">
         <h2 className="text-xl font-semibold main-text-color mb-4">
           All Orders
         </h2>
@@ -73,7 +73,7 @@ const OrderManager = () => {
         <div className="overflow-x-auto">
           <table className="w-full border-collapse">
             <thead>
-              <tr className="text-left text-sm main-text-color border-b bg-[#FFF8EF]">
+              <tr className="text-left text-sm main-text-color border-b bg-[#FFF7ED]">
                 <th className="p-3">Order ID</th>
                 <th className="p-3">Customer</th>
                 <th className="p-3">Phone</th>
@@ -94,9 +94,9 @@ const OrderManager = () => {
                 .map((ord) => (
                   <tr
                     key={ord.id}
-                    className="border-b hover:bg-[#FFF3E0] transition"
+                    className="border-b hover:bg-[#FFF1E5] transition"
                   >
-                    <td className="p-3 font-semibold text-[#5C3B0B]">
+                    <td className="p-3 font-semibold text-[#2F2119]">
                       {ord.id}
                     </td>
                     <td className="p-3">{ord.customer}</td>

@@ -9,7 +9,7 @@ const BrowseCategories = () => {
         <h2 className="text-3xl font-extrabold text-center main-text-color mb-2">
           Browse Categories
         </h2>
-        <p className="text-center text-[#7A4A21] mb-7 sm:mb-12 ">
+        <p className="text-center text-[#5F4638] mb-7 sm:mb-12 ">
           Find your favorite type of crunchy kacha papad
         </p>
 
@@ -17,11 +17,11 @@ const BrowseCategories = () => {
         <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {/* Category Card */}
 
-          {[1, 2, 3, 4].map((value) => {
+          {[1,].map((value) => {
             return (
               <div
                 key={value}
-                className="group bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden border border-[#f2d5b3]"
+                className="group bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden border border-[#E6CDB9]"
               >
                 {/* IMAGE */}
                 <div className="relative flex justify-center overflow-hidden">

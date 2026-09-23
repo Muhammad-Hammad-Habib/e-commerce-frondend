@@ -21,7 +21,7 @@ const Checkout = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#f7e1bc] px-4 sm:px-6 py-6 flex justify-center">
+    <div className="min-h-screen bg-[#F8EADB] px-4 sm:px-6 py-6 flex justify-center">
       <div className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* LEFT — FORM */}
         <div className="md:col-span-2 space-y-6">
@@ -90,7 +90,7 @@ const Checkout = () => {
               Payment Instructions
             </h2>
 
-            <div className="bg-white p-4 rounded-lg text-[#4A2E0F] text-sm">
+            <div className="bg-white p-4 rounded-lg text-[#3F2B20] text-sm">
               <ul className="list-disc pl-5 space-y-1">
                 <li>
                   A minimum <strong>10% advance payment</strong> is required to
@@ -116,18 +116,18 @@ const Checkout = () => {
 
         {/* RIGHT — ORDER SUMMARY */}
         <div className="bg-white rounded-xl shadow-md p-5 flex flex-col">
-          <h2 className="text-xl font-semibold text-[#4A2E0F] mb-4">
+          <h2 className="text-xl font-semibold text-[#3F2B20] mb-4">
             Your Order
           </h2>
 
-          <div className="grid grid-cols-[50%_25%_25%] text-md sm:text-lg font-medium text-[#4A2E0F] mb-2">
+          <div className="grid grid-cols-[50%_25%_25%] text-md sm:text-lg font-medium text-[#3F2B20] mb-2">
             <span>Item</span>
             <span className="text">Unit</span>
             <span className="text-center">Price</span>
           </div>
-          <hr className="border-[#E4D5C7] mb-1" />
+          <hr className="border-[#E6CDB9] mb-1" />
 
-          <div className="flex-1  max-h-65  overflow-auto text-[#4A2E0F]">
+          <div className="flex-1  max-h-65  overflow-auto text-[#3F2B20]">
             {[1, 2, 3, 4, 5, 63, 4, 5, 63, 4, 5, 6, 3, 4, 5, 6, 7, 8, 9, 10, 11,12, 14,].map((i) => (
             // {[1, 2, 3].map((i) => (
               <div key={i} className="grid grid-cols-[50%_25%_25%] text-md">
@@ -138,7 +138,7 @@ const Checkout = () => {
             ))}
           </div>
 
-          <div className="mt-2 pt-4 border-t border-[#E4D5C7] space-y-1">
+          <div className="mt-2 pt-4 border-t border-[#E6CDB9] space-y-1">
             <div className="flex justify-between font-medium">
               <span>Subtotal</span>
               <span>Rs. 750</span>
@@ -160,11 +160,11 @@ const Checkout = () => {
 
         {/* INSTRUCTIONS */}
         <div className="bg-white rounded-xl md:col-span-3 shadow-md p-5">
-          <h2 className="text-xl font-semibold text-[#4A2E0F] mb-3">
+          <h2 className="text-xl font-semibold text-[#3F2B20] mb-3">
             Instructions
           </h2>
 
-          <ul className="space-y-2 text-[#4A2E0F] text-sm">
+          <ul className="space-y-2 text-[#3F2B20] text-sm">
             <li>
               • Please enter a valid phone number for delivery coordination.
             </li>

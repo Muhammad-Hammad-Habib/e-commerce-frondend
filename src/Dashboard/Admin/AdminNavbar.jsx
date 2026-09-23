@@ -32,14 +32,14 @@ const AdminNavbar = () => {
   return (
     <Disclosure
       as="nav"
-      className="sticky border-b border-[#f79854] bg-[#FFF6E5] z-1 top-0 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10"
+      className="sticky border-b border-[#E6CDB9] bg-[#FFF7ED] z-1 top-0 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10"
     >
       <div className="mx-auto max-w px-2 sm:px-6 lg:px-4">
         <div className="relative flex h-16 items-center justify-between">
           {/* Logo and hamburger */}
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
-            <DisclosureButton className=" text-[#ff6900] group relative inline-flex items-center justify-center rounded-md p-2  hover:bg-white/5 focus:outline-2 focus:-outline-offset-1 focus:outline-[#ff6900]">
+            <DisclosureButton className=" text-[#B94A0A] group relative inline-flex items-center justify-center rounded-md p-2  hover:bg-white/5 focus:outline-2 focus:-outline-offset-1 focus:outline-[#B94A0A]">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
               {/* <Bars3Icon
@@ -77,7 +77,7 @@ const AdminNavbar = () => {
                       className={classNames(
                         item.current
                           ? "custom-button font-extrabold"
-                          : "text-[#75451C]  hover:bg-white/5 hover:text-[#d75a00]",
+                          : "text-[#3F2B20]  hover:bg-white/5 hover:text-[#9F3E08]",
                         "rounded-md px-2 py-2 text-md font-medium "
                       )}
                     >
@@ -104,7 +104,7 @@ const AdminNavbar = () => {
               className={classNames(
                 item.current
                   ? "custom-button"
-                  : "text-[#ff6900] hover:bg-white/5 hover:text-[#d75a00]",
+                  : "text-[#B94A0A] hover:bg-white/5 hover:text-[#9F3E08]",
                 "block rounded-md px-3 py-2 text-base font-medium"
               )}
             >
@@ -112,8 +112,8 @@ const AdminNavbar = () => {
 
               {/* className={classNames(
                       item.current
-                        ? "bg-gradient-to-r from-[#fd8e36] to-[#fbbf77] text-white"
-                        : "text-[#ce6c45] hover:bg-white/5 hover:text-[#f4713d]",
+                        ? "bg-gradient-to-r from-[#B94A0A] to-[#E7904A] text-white"
+                        : "text-[#B94A0A] hover:bg-white/5 hover:text-[#B94A0A]",
                       "rounded-md px-3 py-2 text-sm font-medium"
                     )} */}
             </DisclosureButton>

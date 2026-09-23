@@ -13,7 +13,7 @@ import {
 
 /**
  * DashboardOverview
- * Theme: soft cream background #FFF6E5, warm browns, orange accents
+ * Theme: soft cream background #FFF7ED, warm browns, orange accents
  *
  * Drop into your app and pass real values or connect to your user/order API.
  */
@@ -54,10 +54,10 @@ const User = ({ user = { name: "Ali Ahmed" } }) => {
       {/* Header */}
       <header className=" mx-auto mb-8 grid grid-cols-1  sm:grid-cols-2">
         <div>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-[#5C3B0B]">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-[#2F2119]">
             Dashboard
           </h1>
-          <p className="text-lg text-[#7A5336] mt-2">
+          <p className="text-lg text-[#5F4638] mt-2">
             Welcome back, {user.name}
           </p>
         </div>
@@ -74,11 +74,11 @@ const User = ({ user = { name: "Ali Ahmed" } }) => {
         {statCards.map((card) => (
           <div
             key={card.id}
-            className="bg-white rounded-2xl p-2 px-4 sm:p-5 shadow-sm border border-[#f2d5b3] flex flex-col justify-between"
+            className="bg-white rounded-2xl p-2 px-4 sm:p-5 shadow-sm border border-[#E6CDB9] flex flex-col justify-between"
           >
             <div className="flex items-start justify-between gap-4">
               <div className="flex items-center gap-3">
-                <div className="w-11 h-11 rounded-full bg-[#FFE7C6] flex items-center justify-center text-[#D86F1A] shadow">
+                <div className="w-11 h-11 rounded-full bg-[#F6D7BD] flex items-center justify-center text-[#B94A0A] shadow">
                   {card.icon}
                 </div>
 
@@ -97,7 +97,7 @@ const User = ({ user = { name: "Ali Ahmed" } }) => {
               {/* right side for progress / value */}
               {card.kind === "progress" ? (
                 <div className="w-28 text-right">
-                  <div className="text-2xl font-bold text-[#5A3E2B]">
+                  <div className="text-2xl font-bold text-[#3F2B20]">
                     {card.value}%
                   </div>
                 </div>
@@ -107,21 +107,21 @@ const User = ({ user = { name: "Ali Ahmed" } }) => {
             {/* progress bar if needed */}
             {card.kind === "progress" ? (
               <div className="mt-4">
-                <div className="w-full h-3 bg-[#FFF0DE] rounded-full">
+                <div className="w-full h-3 bg-[#F6D7BD] rounded-full">
                   <div
                     className="h-3 rounded-full"
                     style={{
                       width: `${card.value}%`,
-                      background: "linear-gradient(90deg,#fd8e36,#fbbf77)",
+                      background: "linear-gradient(90deg,#B94A0A,#E7904A)",
                     }}
                   />
                 </div>
-                <div className="text-xs text-[#8A6F5A] mt-2">
+                <div className="text-xs text-[#7A6252] mt-2">
                   Complete your profile to get special offers
                 </div>
               </div>
             ) : (
-              <div className="mt-4 text-sm text-[#8A6F5A]">
+              <div className="mt-4 text-sm text-[#7A6252]">
                 {card.title === "Total Orders"
                   ? "Orders placed"
                   : card.title === "Orders in Progress"
@@ -137,21 +137,21 @@ const User = ({ user = { name: "Ali Ahmed" } }) => {
 
       {/* Small footer summary card */}
       <div className=" mx-auto  mt-8">
-        <div className="bg-white rounded-2xl p-3 sm:p-6 shadow-sm border border-[#f2d5b3]">
+        <div className="bg-white rounded-2xl p-3 sm:p-6 shadow-sm border border-[#E6CDB9]">
           <h3 className="text-lg font-semibold main-text-color mb-3">
             Quick Summary
           </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-2 sm:gap-4 main-text-color">
-            <div className="p-4 bg-[#FFF8EF] rounded-lg">
+            <div className="p-4 bg-[#FFF7ED] rounded-lg">
               <div className="text-sm">Pending Orders</div>
               <div className="font-bold text-xl">2</div>
             </div>
-            <div className="p-4 bg-[#FFF8EF] rounded-lg">
+            <div className="p-4 bg-[#FFF7ED] rounded-lg">
               <div className="text-sm">Saved Addresses</div>
               <div className="font-bold text-xl">1</div>
             </div>
-            <div className="p-4 bg-[#FFF8EF] rounded-lg">
+            <div className="p-4 bg-[#FFF7ED] rounded-lg">
               <div className="text-sm">Wishlist Items</div>
               <div className="font-bold text-xl">0</div>
             </div>
@@ -169,9 +169,9 @@ const ActionButton = ({ text, icon, variant = "solid" }) => {
   // if (variant === "ghost") {
   //   return (
   //     <button
-  //       className={`${base} bg-[#FFF6E5] border border-[#f2d5b3] text-[#5A3E2B]`}
+  //       className={`${base} bg-[#FFF7ED] border border-[#E6CDB9] text-[#3F2B20]`}
   //     >
-  //       <span className="text-[#D86F1A]">{icon}</span>
+  //       <span className="text-[#B94A0A]">{icon}</span>
   //       {text}
   //     </button>
   //   );

@@ -44,7 +44,7 @@ const ProductDetail = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* IMAGES */}
           <div>
-            <div className="rounded-2xl  shadow border border-[#f2d5b3]">
+            <div className="rounded-2xl  shadow border border-[#E6CDB9]">
               <img
                 src={activeImg}
                 alt="product"
@@ -71,11 +71,11 @@ const ProductDetail = () => {
               Classic Pipe Papad
             </h1>
 
-            <p className="text-2xl font-semibold text-[#D86F1A] mt-3">
+            <p className="text-2xl font-semibold text-[#B94A0A] mt-3">
               Rs. 250
             </p>
 
-            <p className="text-[#7A5336] mt-4">
+            <p className="text-[#5F4638] mt-4">
               Crispy, fresh, handmade papad made with premium lentils.
             </p>
 
@@ -84,7 +84,7 @@ const ProductDetail = () => {
               <h3 className="text-xl font-semibold main-text-color mb-2">
                 Product Details
               </h3>
-              <p className="text-[#7A5336] leading-relaxed">
+              <p className="text-[#5F4638] leading-relaxed">
                 Classic Pipe Papad is a traditional Indian snack made using
                 high-quality lentil flour and authentic spices. Each papad is
                 sun-dried and prepared hygienically to ensure crispiness,

@@ -60,14 +60,14 @@ const ProductsManager = () => {
       <ProductPopup isOpen={openPopup} onClose={() => setOpenPopup(false)} />
 
       {/* Product Listing */}
-      <h2 className="text-3xl font-bold text-[#5C3B0B] mb-4">
+      <h2 className="text-3xl font-bold text-[#2F2119] mb-4">
         Product Listing
       </h2>
 
-      <div className="bg-white rounded-2xl border border-[#f2d5b3] shadow-sm p-6 overflow-x-auto">
+      <div className="bg-white rounded-2xl border border-[#E6CDB9] shadow-sm p-6 overflow-x-auto">
         <table className="w-full text-left">
           <thead>
-            <tr className="border-b border-[#f2d5b3] text-[#5C3B0B]">
+            <tr className="border-b border-[#E6CDB9] text-[#2F2119]">
               <th className="py-2">Product Name</th>
               <th className="py-2">Category</th>
               <th className="py-2">Short Desc.</th>
@@ -83,7 +83,7 @@ const ProductsManager = () => {
             {products.map((product, index) => (
               <tr
                 key={index}
-                className="border-b border-[#f7e4cd] text-[#5A3E2B] hover:bg-[#fff4e6] transition"
+                className="border-b border-[#F0DDCC] text-[#3F2B20] hover:bg-[#FFF1E5] transition"
               >
                 {/* Product Name */}
                 <td className="p-1 font-semibold">{product.name}</td>
@@ -116,7 +116,7 @@ const ProductsManager = () => {
                 </td>
 
                 {/* Price */}
-                <td className="p-1 font-medium text-[#E76F00]">
+                <td className="p-1 font-medium text-[#B94A0A]">
                   Rs. {product.price}
                 </td>
 
@@ -128,7 +128,7 @@ const ProductsManager = () => {
                   <div className="flex gap-2">
                     <button
                       onClick={() => editProduct(product.id)}
-                      className="bg-[#ff8a00] text-white px-3 py-1 rounded-lg text-sm hover:bg-[#e67c00] transition"
+                      className="bg-[#B94A0A] text-white px-3 py-1 rounded-lg text-sm hover:bg-[#9F3E08] transition"
                     >
                       Edit
                     </button>
@@ -146,7 +146,7 @@ const ProductsManager = () => {
 
             {products.length === 0 && (
               <tr>
-                <td colSpan="8" className="py-6 text-center text-[#8A6F5A]">
+                <td colSpan="8" className="py-6 text-center text-[#7A6252]">
                   No products added yet.
                 </td>
               </tr>
@@ -223,15 +223,15 @@ const ProductPopup = ({ isOpen, onClose }) => {
         </button>
 
         {/* Heading */}
-        <h1 className="text-4xl font-extrabold text-[#5C3B0B] mb-2">
+        <h1 className="text-4xl font-extrabold text-[#2F2119] mb-2">
           Add Product
         </h1>
-        <p className="text-[#7A5336] mb-6">
+        <p className="text-[#5F4638] mb-6">
           Fill in the details of the product you'd like to add.
         </p>
 
         {/* Add Product Card */}
-        <div className="bg-white border border-[#f2d5b3] rounded-2xl p-6 shadow-sm mb-10">
+        <div className="bg-white border border-[#E6CDB9] rounded-2xl p-6 shadow-sm mb-10">
           <div className="grid grid-cols-2 gap-2">
             {/* Product Name */}
             <div className="mb-1">

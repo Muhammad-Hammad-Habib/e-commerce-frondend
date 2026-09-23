@@ -49,7 +49,7 @@ const router = createBrowserRouter([
 
       // User route start from here
       {
-        path: "user",
+        path: "dashboard",
         children: [
           {
             index: true,
@@ -61,13 +61,13 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/admin",
+    path: "dashboard/admin",
     element: <AdminDashboardLayout />,
     children: [
       { index: true, element: <AdminHome /> },
-      { path:"category-manager", element: <CategoryManager /> },
-      { path:"product-manager", element: <ProductsManager /> },
-      { path:"order-manager", element: <OrderManager /> },
+      { path: "category-manager", element: <CategoryManager /> },
+      { path: "product-manager", element: <ProductsManager /> },
+      { path: "order-manager", element: <OrderManager /> },
     ],
   },
 ]);

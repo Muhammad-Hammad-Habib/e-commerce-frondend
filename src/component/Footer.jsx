@@ -9,7 +9,7 @@ const Footer = () => {
           <h2 className="text-2xl font-extrabold main-text-color">
             Kad.pk
           </h2>
-          <p className="text-[#6f4e20] mt-3 text-sm leading-relaxed">
+          <p className="text-[#5F4638] mt-3 text-sm leading-relaxed">
             Freshly crafted kacha papads prepared with authentic traditional
             recipes. Crunchy, tasty & made with love.
           </p>
@@ -46,11 +46,11 @@ const Footer = () => {
           <h3 className="text-lg font-semibold main-text-color mb-3">
             Quick Links
           </h3>
-          <ul className="sm:space-y-2 text-[#6f4e20]">
-            <li className="hover:text-[#D86F1A] cursor-pointer">Home</li>
-            <li className="hover:text-[#D86F1A] cursor-pointer">Shop</li>
-            <li className="hover:text-[#D86F1A] cursor-pointer">About Us</li>
-            <li className="hover:text-[#D86F1A] cursor-pointer">Contact</li>
+          <ul className="sm:space-y-2 text-[#5F4638]">
+            <li className="hover:text-[#B94A0A] cursor-pointer">Home</li>
+            <li className="hover:text-[#B94A0A] cursor-pointer">Shop</li>
+            <li className="hover:text-[#B94A0A] cursor-pointer">About Us</li>
+            <li className="hover:text-[#B94A0A] cursor-pointer">Contact</li>
           </ul>
         </div>
 
@@ -59,10 +59,10 @@ const Footer = () => {
           <h3 className="text-lg font-semibold main-text-color mb-3">
             Categories
           </h3>
-          <ul className="space-y-0 sm:space-y-2 text-[#6f4e20]">
-            <li className="hover:text-[#D86F1A] cursor-pointer">Pipe Papad</li>
-            <li className="hover:text-[#D86F1A] cursor-pointer">Ring Papad</li>
-            <li className="hover:text-[#D86F1A] cursor-pointer">
+          <ul className="space-y-0 sm:space-y-2 text-[#5F4638]">
+            <li className="hover:text-[#B94A0A] cursor-pointer">Pipe Papad</li>
+            <li className="hover:text-[#B94A0A] cursor-pointer">Ring Papad</li>
+            <li className="hover:text-[#B94A0A] cursor-pointer">
               Slanty Papad
             </li>
           </ul>
@@ -73,7 +73,7 @@ const Footer = () => {
           <h3 className="text-lg font-semibold main-text-color mb-3">
             Contact Us
           </h3>
-          <ul className=" space-y-0 sm:space-y-2 text-[#6f4e20] text-sm">
+          <ul className=" space-y-0 sm:space-y-2 text-[#5F4638] text-sm">
             <li>Email: s.pk</li>
             <li>Phone: +92 300 1234567</li>
             <li>Location: Karachi, Pakistan</li>
@@ -82,7 +82,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom */}
-      <div className="text-center text-[#6f4e20] mt-10 text-sm">
+      <div className="text-center text-[#5F4638] mt-10 text-sm">
         © {new Date().getFullYear()}{" "}
         <span className="font-semibold main-text-color">KachaPapad.pk</span>.
         All rights reserved.

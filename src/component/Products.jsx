@@ -68,7 +68,7 @@ const Products = () => {
           <h2 className="text-4xl font-bold text-center main-text-color">
             Products
           </h2>
-          <p className="text-center text-[#8A6F5A] mt-2">
+          <p className="text-center text-[#7A6252] mt-2">
             Freshly handmade papads delivered to your doorstep.
           </p>
 
@@ -78,7 +78,7 @@ const Products = () => {
               <button
                 key={index}
                 className="px-4 py-2 custom-button transition-all shadow-sm"
-                // className="px-4 py-2 bg-white border border-[#f2d5b3] rounded-xl text-[#7a5336] hover:bg-[#ffe8c9] transition-all shadow-sm"
+                // className="px-4 py-2 bg-white border border-[#E6CDB9] rounded-xl text-[#5F4638] hover:bg-[#F6D7BD] transition-all shadow-sm"
               >
                 {cat}
               </button>
@@ -94,20 +94,20 @@ const Products = () => {
           {/* Products grid */}
 
           {/* Pagination */}
-          {/* <div className="flex justify-center gap-4 mt-12 text-[#7a5336]">
-          <button className="px-3 py-1 border rounded-md bg-white hover:bg-[#ffe8c9]">
+          {/* <div className="flex justify-center gap-4 mt-12 text-[#5F4638]">
+          <button className="px-3 py-1 border rounded-md bg-white hover:bg-[#F6D7BD]">
             &lt;
           </button>
-          <button className="px-3 py-1 border rounded-md bg-[#fd8e36] text-white">
+          <button className="px-3 py-1 border rounded-md bg-[#B94A0A] text-white">
             1
           </button>
-          <button className="px-3 py-1 border rounded-md bg-white hover:bg-[#ffe8c9]">
+          <button className="px-3 py-1 border rounded-md bg-white hover:bg-[#F6D7BD]">
             2
           </button>
-          <button className="px-3 py-1 border rounded-md bg-white hover:bg-[#ffe8c9]">
+          <button className="px-3 py-1 border rounded-md bg-white hover:bg-[#F6D7BD]">
             3
           </button>
-          <button className="px-3 py-1 border rounded-md bg-white hover:bg-[#ffe8c9]">
+          <button className="px-3 py-1 border rounded-md bg-white hover:bg-[#F6D7BD]">
             &gt;
           </button>
         </div> */}

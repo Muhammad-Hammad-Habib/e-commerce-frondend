@@ -5,15 +5,15 @@ import demo from "../asset/heroSectionBowl.png";
 const CartSideBar = ({ isOpen, toggleCart }) => {
   return (
     <div
-      className={`fixed top-0 right-0 h-full w-90 bg-[#FFF6E5] shadow-2xl 
+      className={`fixed top-0 right-0 h-full w-90 bg-[#FFF7ED] shadow-2xl
       transition-transform duration-300 z-50 flex flex-col
       ${isOpen ? "translate-x-0" : "translate-x-full"}`}
     >
       {/* HEADER */}
       <div className="flex justify-between items-center p-4 border-b border-orange-200">
-        <h2 className="text-2xl font-bold text-[#75451C]">Cart</h2>
+        <h2 className="text-2xl font-bold text-[#3F2B20]">Cart</h2>
         <button onClick={toggleCart}>
-          <IoClose className="text-3xl text-[#75451C] hover:text-orange-500" />
+          <IoClose className="text-3xl text-[#3F2B20] hover:text-orange-500" />
         </button>
       </div>
 
@@ -35,7 +35,7 @@ const CartSideBar = ({ isOpen, toggleCart }) => {
 
               <div className="ml-3 w-full grid grid-cols-2">
                 <div>
-                  <h3 className="font-semibold text-[#75451C]">Pi</h3>
+                  <h3 className="font-semibold text-[#3F2B20]">Pi</h3>
                   <p className="text-sm text-gray-600">Rs. 250</p>
                 </div>
 
@@ -59,19 +59,19 @@ const CartSideBar = ({ isOpen, toggleCart }) => {
 
       {/* TOTAL */}
       <div className="  bottom-0 w-full p-2 border-t border-orange-200">
-        <div className="flex justify-between text-[#75451C] text-md">
+        <div className="flex justify-between text-[#3F2B20] text-md">
           <span>Subtotal:</span>
           <span>Rs. 820</span>
         </div>
 
-        <div className="flex justify-between text-[#75451C] text-md">
+        <div className="flex justify-between text-[#3F2B20] text-md">
           <span>Delivery:</span>
           <span>Rs. 150</span>
         </div>
 
         <hr className=" border-orange-300" />
 
-        <div className="flex justify-between font-bold text-md text-[#75451C] mb-2">
+        <div className="flex justify-between font-bold text-md text-[#3F2B20] mb-2">
           <span>Total:</span>
           <span>Rs. 970</span>
         </div>
@@ -93,6 +93,3 @@ const CartSideBar = ({ isOpen, toggleCart }) => {
 };
 
 export default CartSideBar;
-// position: fixed;
-// width: 100%;
-// bottom: 0px

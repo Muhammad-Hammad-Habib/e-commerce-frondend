@@ -30,13 +30,13 @@ const CategoryManager = () => {
         {/* Category */}
         <div>
           {/* Title */}
-          <h1 className="text-3xl sm:text-4xl font-extrabold text-[#5C3B0B] mb-6">
+          <h1 className="text-3xl sm:text-4xl font-extrabold text-[#2F2119] mb-6">
             Add Category
           </h1>
 
           {/* Top Form Card */}
-          <div className="bg-white w-full  p-4 sm:p-6 rounded-2xl shadow-sm border border-[#f2d5b3] ">
-            <label className="block text-[#5A3E2B] font-semibold mt mb-1">
+          <div className="bg-white w-full  p-4 sm:p-6 rounded-2xl shadow-sm border border-[#E6CDB9] ">
+            <label className="block text-[#3F2B20] font-semibold mt mb-1">
               Category Name
             </label>
             <input
@@ -57,26 +57,26 @@ const CategoryManager = () => {
 
           <div className="mt-4">
             {/* List Section */}
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#5C3B0B] mb-6">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#2F2119] mb-6">
               Category List
             </h2>
 
-            <div className="bg-white rounded-2xl border border-[#f2d5b3] shadow-sm">
+            <div className="bg-white rounded-2xl border border-[#E6CDB9] shadow-sm">
               {list.length === 0 ? (
-                <p className="p-5 text-center text-[#7A5336]">
+                <p className="p-5 text-center text-[#5F4638]">
                   No categories added yet.
                 </p>
               ) : (
                 list.map((item, index) => (
                   <div
                     key={index}
-                    className="flex items-center justify-between p-3 border-b border-[#f0dcc3]"
+                    className="flex items-center justify-between p-3 border-b border-[#E6CDB9]"
                   >
                     <div>
-                      <p className="text-[#5C3B0B] font-bold text-lg">
+                      <p className="text-[#2F2119] font-bold text-lg">
                         {item.category}
                       </p>
-                      <p className="text-[#7A5336] text-sm">{item.sub}</p>
+                      <p className="text-[#5F4638] text-sm">{item.sub}</p>
                     </div>
 
                     <button
@@ -95,13 +95,13 @@ const CategoryManager = () => {
         {/* UOM */}
         <div>
           {/* Title */}
-          <h1 className="text-3xl sm:text-4xl font-extrabold text-[#5C3B0B] mb-6">
+          <h1 className="text-3xl sm:text-4xl font-extrabold text-[#2F2119] mb-6">
             Add UOM
           </h1>
 
           {/* Top Form Card */}
-          <div className="bg-white w-full  p-4 sm:p-6 rounded-2xl shadow-sm border border-[#f2d5b3] ">
-            <label className="block text-[#5A3E2B] font-semibold mt mb-1">
+          <div className="bg-white w-full  p-4 sm:p-6 rounded-2xl shadow-sm border border-[#E6CDB9] ">
+            <label className="block text-[#3F2B20] font-semibold mt mb-1">
               UOM Name
             </label>
             <input
@@ -122,26 +122,26 @@ const CategoryManager = () => {
 
           <div className="mt-4">
             {/* List Section */}
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#5C3B0B] mb-6">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#2F2119] mb-6">
               UOM List
             </h2>
 
-            <div className="bg-white rounded-2xl border border-[#f2d5b3] shadow-sm">
+            <div className="bg-white rounded-2xl border border-[#E6CDB9] shadow-sm">
               {list.length === 0 ? (
-                <p className="p-5 text-center text-[#7A5336]">
+                <p className="p-5 text-center text-[#5F4638]">
                   No categories added yet.
                 </p>
               ) : (
                 list.map((item, index) => (
                   <div
                     key={index}
-                    className="flex items-center justify-between p-3 border-b border-[#f0dcc3]"
+                    className="flex items-center justify-between p-3 border-b border-[#E6CDB9]"
                   >
                     <div>
-                      <p className="text-[#5C3B0B] font-bold text-lg">
+                      <p className="text-[#2F2119] font-bold text-lg">
                         {item.category}
                       </p>
-                      <p className="text-[#7A5336] text-sm">{item.sub}</p>
+                      <p className="text-[#5F4638] text-sm">{item.sub}</p>
                     </div>
 
                     <button

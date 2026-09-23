@@ -8,7 +8,7 @@ const LandingPage = () => {
   const [isCartOpen, setIsCartOpen] = useState(false);
   const toggleCart = () => setIsCartOpen(!isCartOpen);
   return (
-    <div className="container-lg bg-[#FFF6E5] ">
+    <div className="container-lg bg-[#FFF7ED] ">
       <Navbar toggleCart={toggleCart} />
       <Outlet />
       <CartSideBar isOpen={isCartOpen} toggleCart={toggleCart} />
